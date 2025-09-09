@@ -29,10 +29,12 @@ Protein (g): 1
 
 #### Rating
 
-#onestar #twostar #threestar #fourstar #fivestar out of 5 stars
+#fivestar out of 5 stars
 
 #### Comments
 
 From https://www.foodbanjo.com/ninja-creami-pistachio-ice-cream/
 
 NOT a low calorie recipe haha
+
+But damn it's really tasty

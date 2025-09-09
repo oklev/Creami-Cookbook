@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "db4de831f326a7c3",
+        "id": "51c1c42a96daa863",
         "type": "tabs",
         "children": [
           {
-            "id": "ab11956d34a3322d",
+            "id": "30c0966718468f76",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,22 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "Pistachio Ice Cream"
-            }
-          }
-        ]
-      },
-      {
-        "id": "bb125f47424cdfc3",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "e1ef08605ed681ed",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
             }
           }
         ]
@@ -69,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#twostar",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Recipes/Pistachio Ice Cream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Pistachio Ice Cream"
             }
           },
           {
@@ -128,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Recipes/Pistachio Ice Cream.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Pistachio Ice Cream"
             }
           },
           {
@@ -156,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Recipes/Pistachio Ice Cream.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Pistachio Ice Cream"
             }
           }
         ]
@@ -181,15 +168,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e1ef08605ed681ed",
+  "active": "30c0966718468f76",
   "lastOpenFiles": [
-    "Recipes/Pistachio Ice Cream.md",
     "Recipes/Butterfinger Ice Cream.md",
-    "Recipes/Cherry Froyo.md",
+    "Ingredients/Milk and Yogurt/Sugar Free French Vanilla.md",
+    "Ingredients/Fruit/Frozen Mixed Berries.md",
+    "Recipes/Blueberry Froyo.md",
+    "Recipes/Pistachio Ice Cream.md",
     "Recipes/Just straight up chocolate pudding.md",
+    "Recipes/Cherry Froyo.md",
     "Recipes/Peach Ice Cream.md",
     "Recipes/Mixed Fruit Smoothie Bowl.md",
-    "Recipes/Blueberry Froyo.md",
     "Ingredients/Milk and Yogurt/Heavy Whipping Cream.md",
     "Ingredients/Pudding/Pistachio Instant Pudding Mix.md",
     "Ingredients/Sweeteners and Extracts/Almond Extract.md",
@@ -212,12 +201,10 @@
     "Recipes/5 stars",
     "Untitled 1.canvas",
     "Ingredients/Protein Powder/Vanilla Protein Powder.md",
-    "Ingredients/Fruit/Frozen Mixed Berries.md",
     "recipe.py",
     "Ingredients/Pudding/Sugar Free Jello Pudding.md",
     "Ingredients/Pudding",
     "Ingredients/Sweeteners and Extracts/Vanilla Bean Paste.md",
-    "Ingredients/Sweeteners and Extracts/Stevia.md",
     "Ingredients/Sweeteners and Extracts",
     "Ingredients/Milk and Yogurt",
     "Ingredients/Protein Powder"
