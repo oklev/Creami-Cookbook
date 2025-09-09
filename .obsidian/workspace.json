@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recipes/Blueberry Froyo.md",
+                "file": "Recipes/Butterfinger Ice Cream.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Blueberry Froyo"
+              "title": "Butterfinger Ice Cream"
             }
           }
         ]
@@ -110,7 +110,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recipes/Blueberry Froyo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Blueberry Froyo"
+              "title": "Backlinks"
             }
           },
           {
@@ -129,12 +128,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Recipes/Blueberry Froyo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Blueberry Froyo"
+              "title": "Outgoing links"
             }
           },
           {
@@ -158,13 +156,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Recipes/Blueberry Froyo.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Blueberry Froyo"
+              "title": "Outline"
             }
           }
         ]
@@ -184,10 +181,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab11956d34a3322d",
+  "active": "e1ef08605ed681ed",
   "lastOpenFiles": [
-    "Ingredients/Milk and Yogurt/Activia Blueberry Yogurt.md",
+    "Recipes/Butterfinger Ice Cream.md",
+    "Ingredients/Protein Powder/Chocolate Protein Powder.md",
+    "Ingredients/Protein Powder/PBfit chocolate.md",
+    "Ingredients/Milk and Yogurt/Vanilla Almond Milk.md",
+    "Ingredients/Pudding/Butterscotch Instant Pudding Mix.md",
     "Recipes/Blueberry Froyo.md",
+    "Ingredients/Milk and Yogurt/Activia Blueberry Yogurt.md",
     "Ingredients/Milk and Yogurt/Untitled",
     "Recipes/Cherry Froyo.md",
     "Ingredients/Milk and Yogurt/Activia Cherry Yogurt.md",
