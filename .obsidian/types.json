@@ -1,0 +1,21 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "Calories": "number",
+    "Total Fat": "number",
+    "Saturated Fat": "number",
+    "Trans Fat": "number",
+    "Calories (kcal)": "number",
+    "Total Fat (g)": "number",
+    "Saturated Fat (g)": "number",
+    "Trans Fat (g)": "number",
+    "Cholesterol (mg)": "number",
+    "Sodium (mg)": "number",
+    "Total Carbohydrate (g)": "number",
+    "Dietary Fiber (g)": "number",
+    "Sugars (g)": "number",
+    "Protein (g)": "number"
+  }
+}

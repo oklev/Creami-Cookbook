@@ -1,0 +1,100 @@
+{
+  "collapse-filter": true,
+  "search": "-path:Templates  ",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:Ingredients/Fruit  ",
+      "color": {
+        "a": 1,
+        "rgb": 14536774
+      }
+    },
+    {
+      "query": "path:\"Ingredients/Milk and Yogurt\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 13877143
+      }
+    },
+    {
+      "query": "path:\"Ingredients/Protein Powder\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 10912852
+      }
+    },
+    {
+      "query": "path:Ingredients/Pudding  ",
+      "color": {
+        "a": 1,
+        "rgb": 11494930
+      }
+    },
+    {
+      "query": "path:\"Ingredients/Sweeteners and Extracts\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14606224
+      }
+    },
+    {
+      "query": "path:Ingredients  ",
+      "color": {
+        "a": 1,
+        "rgb": 14708306
+      }
+    },
+    {
+      "query": "path:Recipes tag:#onestar  ",
+      "color": {
+        "a": 1,
+        "rgb": 6982615
+      }
+    },
+    {
+      "query": "path:Recipes tag:#twostar  ",
+      "color": {
+        "a": 1,
+        "rgb": 5864675
+      }
+    },
+    {
+      "query": "path:Recipes tag:#threestar  ",
+      "color": {
+        "a": 1,
+        "rgb": 3828441
+      }
+    },
+    {
+      "query": "path:Recipes tag:#fourstar  ",
+      "color": {
+        "a": 1,
+        "rgb": 2771167
+      }
+    },
+    {
+      "query": "path:Recipes tag:#fivestar  ",
+      "color": {
+        "a": 1,
+        "rgb": 15600
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1,
+  "close": false
+}
