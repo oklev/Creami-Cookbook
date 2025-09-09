@@ -72,6 +72,9 @@ class Ingredient:
         self.nutrition_facts = {}
         for line in nutrition_facts_lines:
             self.nutrition_facts[line.split(":")[0]] = to_number(line.split(":")[1]) * self.quantity / self.serving_sizes[self.unit]
+        
+        print(self.name)
+        print(self.nutrition_facts)
     
     def __hash__(self):
         return hash(self.nutrition_facts)
