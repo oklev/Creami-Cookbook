@@ -4,27 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "75d1f1ddc3d87e8b",
+        "id": "db4de831f326a7c3",
         "type": "tabs",
         "children": [
           {
-            "id": "8a73ab2c807367f0",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          }
-        ]
-      },
-      {
-        "id": "8ae3bb98c66a29c4",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "b24ffcb0e7577a19",
+            "id": "ab11956d34a3322d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -69,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#onestar",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -185,12 +168,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b24ffcb0e7577a19",
+  "active": "ab11956d34a3322d",
   "lastOpenFiles": [
-    "Recipes/Mixed Fruit Smoothie Bowl.md",
+    "Recipes/Just straight up frozen pudding.md",
     "Recipes/Peach Ice Cream.md",
-    "Ingredients/Protein Powder/Vanilla Protein Powder.md",
+    "2025-09-09.md",
     "Templates/Recipe.md",
+    "Recipes/Mixed Fruit Smoothie Bowl.md",
+    "Untitled.canvas",
+    "Recipes/Untitled",
+    "Recipes/3 stars",
+    "Recipes/4 stars",
+    "Recipes/5 stars",
+    "Untitled 1.canvas",
+    "Ingredients/Protein Powder/Vanilla Protein Powder.md",
     "Ingredients/Fruit/Frozen Mixed Berries.md",
     "recipe.py",
     "Ingredients/Pudding/Sugar Free Jello Pudding.md",
@@ -205,9 +196,6 @@
     "Ingredients/Fruit/Frozen Peach Slices.md",
     "Templates/Ingredient.md",
     "Ingredients/Fruit",
-    "Recipes",
-    "Ingredients",
-    "Welcome.md",
-    "Templates"
+    "Welcome.md"
   ]
 }

@@ -24,10 +24,9 @@ Protein (g): 7.5
 
 1. Add all ingredients to a ninja blender single serve container
 2. Blend
-3. Pour into creami pint
-4. Freeze overnight
-5. Mix on "smoothie" setting
-6. Add water and respin once or twice until smooth
+3. Freeze overnight in creami pint
+4. Mix on "smoothie" setting
+5. Add water and respin once or twice until smooth
 
 #### Rating
 
