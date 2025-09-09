@@ -1,24 +1,23 @@
 ---
-Calories (kcal): 846
-Total Fat (g): 63
-Saturated Fat (g): 42
+Calories (kcal): 236
+Total Fat (g): 11
+Saturated Fat (g): 0
 Trans Fat (g): 0
-Cholesterol (mg): 240
-Sodium (mg): 440
-Total Carbohydrate (g): 56
+Cholesterol (mg): 0
+Sodium (mg): 480
+Total Carbohydrate (g): 32
 Dietary Fiber (g): 0
-Sugars (g): 51
+Sugars (g): 27
 Protein (g): 1
 ---
 #### Ingredients
 
-| Quantity | Unit | Ingredient                        |
-| :------: | :--- | --------------------------------- |
-|    1     | cup  | [[Vanilla Almond Milk]]           |
-|   3/4    | cup  | [[Heavy Whipping Cream]]          |
-|    2     | tbsp | [[Splenda]]                       |
-|    2     | tbsp | [[Pistachio Instant Pudding Mix]] |
-|   1/8    | tsp  | [[Almond Extract]]                |
+| Quantity | Unit | Ingredient                            |
+| :------: | :--- | ------------------------------------- |
+|    1     | cup  | [[Vanilla Almond Milk]]               |
+|   1/2    | cup  | [[Sugar Free French Vanilla Creamer]] |
+|    2     | tbsp | [[Pistachio Instant Pudding Mix]]     |
+|   1/8    | tsp  | [[Almond Extract]]                    |
 
 #### Instructions
 
@@ -35,6 +34,4 @@ Protein (g): 1
 
 From https://www.foodbanjo.com/ninja-creami-pistachio-ice-cream/
 
-NOT a low calorie recipe haha
-
-But damn it's really tasty
+Trying a lower calorie version
