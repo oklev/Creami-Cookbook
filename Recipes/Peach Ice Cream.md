@@ -1,21 +1,20 @@
 ---
-Calories (kcal): 319
-Total Fat (g): 5.5
-Saturated Fat (g): 2.5
+Calories (kcal): 259
+Total Fat (g): 4
+Saturated Fat (g): 1.5
 Trans Fat (g): 0
 Cholesterol (mg): 17
-Sodium (mg): 472
-Total Carbohydrate (g): 41.5
+Sodium (mg): 302
+Total Carbohydrate (g): 31.5
 Dietary Fiber (g): 4
 Sugars (g): 22.5
-Protein (g): 27
+Protein (g): 26
 ---
 #### Ingredients
 
 | Quantity | Unit      | Ingredient                           |
 | :------: | :-------- | ------------------------------------ |
 |    10    | piece     | [[Frozen Peach Slices]]              |
-|    1     | container | Vanilla [[Sugar Free Jello Pudding]] |
 |    1     | scoop     | [[Vanilla Protein Powder]]           |
 |   1/2    | cup       | [[Greek Yogurt]]                     |
 |   1/2    | cup       | [[2% Milk]]                          |
@@ -35,4 +34,4 @@ Protein (g): 27
 
 #### Comments
 
-Too sweet; tastes very artificial; peach flavor not that strong
+Zero stars; terrible; artificial flavor persists, but now it's also much too powdery

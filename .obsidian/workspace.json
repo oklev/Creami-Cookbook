@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recipes/Mixed Fruit Smoothie Bowl.md",
+                "file": "Recipes/Peach Ice Cream.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mixed Fruit Smoothie Bowl"
+              "title": "Peach Ice Cream"
             }
           }
         ]
@@ -110,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Recipes/Peach Ice Cream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Peach Ice Cream"
             }
           },
           {
@@ -128,11 +129,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Recipes/Peach Ice Cream.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Peach Ice Cream"
             }
           },
           {
@@ -156,12 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Recipes/Peach Ice Cream.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Peach Ice Cream"
             }
           }
         ]
@@ -181,10 +184,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8a73ab2c807367f0",
+  "active": "b24ffcb0e7577a19",
   "lastOpenFiles": [
-    "Ingredients/Protein Powder/Vanilla Protein Powder.md",
     "Recipes/Mixed Fruit Smoothie Bowl.md",
+    "Ingredients/Protein Powder/Vanilla Protein Powder.md",
     "Recipes/Peach Ice Cream.md",
     "Templates/Recipe.md",
     "Ingredients/Fruit/Frozen Mixed Berries.md",
