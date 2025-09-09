@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recipes/Cherry Froyo.md",
+                "file": "Recipes/Blueberry Froyo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cherry Froyo"
+              "title": "Blueberry Froyo"
             }
           }
         ]
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recipes/Cherry Froyo.md",
+                "file": "Recipes/Blueberry Froyo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Cherry Froyo"
+              "title": "Backlinks for Blueberry Froyo"
             }
           },
           {
@@ -129,12 +129,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Recipes/Cherry Froyo.md",
+                "file": "Recipes/Blueberry Froyo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Cherry Froyo"
+              "title": "Outgoing links from Blueberry Froyo"
             }
           },
           {
@@ -158,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Recipes/Cherry Froyo.md",
+                "file": "Recipes/Blueberry Froyo.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Cherry Froyo"
+              "title": "Outline of Blueberry Froyo"
             }
           }
         ]
@@ -186,8 +186,11 @@
   },
   "active": "ab11956d34a3322d",
   "lastOpenFiles": [
-    "Ingredients/Milk and Yogurt/Activia Cherry Yogurt.md",
+    "Ingredients/Milk and Yogurt/Activia Blueberry Yogurt.md",
+    "Recipes/Blueberry Froyo.md",
+    "Ingredients/Milk and Yogurt/Untitled",
     "Recipes/Cherry Froyo.md",
+    "Ingredients/Milk and Yogurt/Activia Cherry Yogurt.md",
     "Ingredients/Milk and Yogurt/Activia Black Cherry Yogurt.md",
     "Recipes/Just straight up chocolate pudding.md",
     "Recipes/Peach Ice Cream.md",
@@ -215,7 +218,6 @@
     "Ingredients/Protein Powder",
     "Ingredients/Fruit/Frozen Peach Slices.md",
     "Templates/Ingredient.md",
-    "Ingredients/Fruit",
     "Welcome.md"
   ]
 }
