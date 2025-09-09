@@ -4,7 +4,7 @@ from glob import glob
 repo_dir = os.path.dirname(__file__)
 
 def main(recipe_name):
-    
+    recipe_name = os.path.basename(recipe_name).split(".md")[0]    
     Recipe(recipe_name).write()
 
 def to_number(s):
