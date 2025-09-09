@@ -1,23 +1,24 @@
 ---
-Calories (kcal): 204
-Total Fat (g): 0
-Saturated Fat (g): 0
+Calories (kcal): 206
+Total Fat (g): 1
+Saturated Fat (g): 0.5
 Trans Fat (g): 0
-Cholesterol (mg): 7
-Sodium (mg): 43
-Total Carbohydrate (g): 37
+Cholesterol (mg): 8
+Sodium (mg): 54
+Total Carbohydrate (g): 38
 Dietary Fiber (g): 6
-Sugars (g): 25
-Protein (g): 10.5
+Sugars (g): 25.5
+Protein (g): 7.5
 ---
 #### Ingredients
 
-| Quantity | Unit | Ingredient               |
-| :------: | :--- | ------------------------ |
-|   1/2    | cup  | [[Greek Yogurt]]         |
-|   1/8    | tsp  | [[Stevia]]               |
-|   1/4    | tsp  | [[Vanilla Bean Paste]]   |
-|    2     | cup  | [[Frozen Mixed Berries]] |
+| Quantity | Unit | Ingredient                                     |
+| :------: | :--- | ---------------------------------------------- |
+|   1/4    | cup  | [[Greek Yogurt]]                               |
+|   1/4    | cup  | [[2% Milk]]                                    |
+|   1/4    | tsp  | [[Stevia]]                                     |
+|   1/4    | tsp  | [[Vanilla Bean Paste]]                         |
+|    2     | cup  | [[Frozen Mixed Berries]], without strawberries |
 
 #### Instructions
 
@@ -30,8 +31,8 @@ Protein (g): 10.5
 
 #### Rating
 
-#threestar out of 5 stars
+#fourstar out of 5 stars
 
 #### Comments
 
-A bit too sour
+Still a bit too sour, but better! Honestly it's almost there, pair it with coconut flakes and it works. Maybe more stevia next time, or splenda. Not sure if removing strawberries made a difference.
