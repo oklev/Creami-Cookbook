@@ -1,27 +1,26 @@
 ---
-Taste rating /5: 3
+Taste rating /5: 
 Calorie range: 200-299
-
 ---
 #### Nutrition Facts
-| Calories (kcal) | 244 |
+| Calories (kcal) | 264 |
 | :-- | :--: |
-| Total Fat (g) | 4 |
-| Saturated Fat (g) | 2.5 |
+| Total Fat (g) | 5.5 |
+| Saturated Fat (g) | 3.5 |
 | Trans Fat (g) | 0 |
-| Cholesterol (mg) | 17 |
-| Sodium (mg) | 277 |
-| Total Carbohydrate (g) | 34 |
+| Cholesterol (mg) | 15 |
+| Sodium (mg) | 294 |
+| Total Carbohydrate (g) | 43 |
 | Dietary Fiber (g) | 2 |
-| Sugars (g) | 22 |
-| Protein (g) | 16.5 |
+| Sugars (g) | 27 |
+| Protein (g) | 10 |
 #### Ingredients
-| Quantity |   Unit    | Ingredient                                |
-| :------: | :-------: | :---------------------------------------- |
-|    10    |   piece   | [[Frozen Peach Slices]]                   |
-|    1     | container | Vanilla [[Sugar Free Jello Pudding Cups]] |
-|    1     | container | [[Activia Peach Yogurt]]                  |
-|   1/2    |    cup    | [[2% Milk]]                               |
+| Quantity | Unit | Ingredient |
+| :--: | :--: | :--- |
+| 10 | piece | [[Frozen Peach Slices]] |
+| 1 | container | Vanilla [[Sugar Free Jello Pudding Cups]] |
+| 1 | container | [[Activia Peach Yogurt]] |
+| 1/2 | cup | [[2% Milk]] |
 #### Instructions
 
 1. Add all ingredients to a ninja blender single serve container

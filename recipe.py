@@ -132,7 +132,7 @@ class Recipe:
             calorie_range = f"{(self.nutrition_facts['Calories (kcal)']//100)*100}-{(self.nutrition_facts['Calories (kcal)']//100)*100+99}"
         content = self.content.replace(
             "Calorie range:" + self.content.split("Calorie range:")[1].split("\n")[0],
-            f"Calorie range: {calorie_range}\n"
+            f"Calorie range: {calorie_range}"
         )
         nutrition_facts = [f"| {key} | {self.nutrition_facts[key]} |" for key in self.nutrition_facts]
         nutrition_facts.insert(1, "| :-- | :--: |")

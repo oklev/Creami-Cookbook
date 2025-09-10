@@ -1,7 +1,6 @@
 ---
 Taste rating /5: 4
 Calorie range: 200-299
-
 ---
 #### Nutrition Facts
 | Calories (kcal) | 206 |

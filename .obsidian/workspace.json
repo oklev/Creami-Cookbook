@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ingredients/Pudding/Sugar Free Jello Pudding Cups.md",
+                "file": "Recipes/Pistachio Ice Cream.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Sugar Free Jello Pudding Cups"
+              "title": "Pistachio Ice Cream"
             }
           }
         ]
@@ -160,23 +160,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false
     }
   },
   "active": "c1a212123c32797b",
   "lastOpenFiles": [
-    "Recipes/Butterfinger Ice Cream.md",
-    "Recipes/Pistachio Ice Cream.md",
     "Recipes/Peach Ice Cream.md",
     "Recipes/Mixed Fruit Smoothie Bowl.md",
     "Recipes/Just straight up chocolate pudding.md",
     "Recipes/Cherry Froyo.md",
+    "Recipes/Butterfinger Ice Cream.md",
     "Recipes/Blueberry Froyo.md",
+    "Ingredients/Pudding/Sugar Free Jello Pudding Cups.md",
+    "Ingredients/Milk and Yogurt/Activia Peach Yogurt.md",
+    "Recipes/Pistachio Ice Cream.md",
     "Templates/Recipe.md",
     "Templates/Ingredient.md",
     "Ingredients/Milk and Yogurt/Activia Black Cherry Yogurt.md",
@@ -195,14 +197,12 @@
     "Ingredients/Milk and Yogurt/Untitled",
     "Ingredients/Milk and Yogurt/Activia Cherry Yogurt.md",
     "Recipes/Just straight up frozen pudding.md",
-    "2025-09-09.md",
     "Untitled.canvas",
     "Recipes/Untitled",
     "Recipes/3 stars",
     "Recipes/4 stars",
     "Recipes/5 stars",
     "Untitled 1.canvas",
-    "Ingredients/Protein Powder/Vanilla Protein Powder.md",
     "recipe.py",
     "Ingredients/Pudding",
     "Ingredients/Sweeteners and Extracts",
