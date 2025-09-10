@@ -16,12 +16,12 @@ Calorie range: 200-299
 | Sugars (g) | 22 |
 | Protein (g) | 16.5 |
 #### Ingredients
-| Quantity | Unit | Ingredient |
-| :--: | :--: | :--- |
-| 10 | piece | [[Frozen Peach Slices]] |
-| 1 | container | Vanilla [[Sugar Free Jello Pudding Cups]] |
-| 1/2 | cup | [[Greek Yogurt]] |
-| 1/2 | cup | [[2% Milk]] |
+| Quantity |   Unit    | Ingredient                                |
+| :------: | :-------: | :---------------------------------------- |
+|    10    |   piece   | [[Frozen Peach Slices]]                   |
+|    1     | container | Vanilla [[Sugar Free Jello Pudding Cups]] |
+|    1     | container | [[Activia Peach Yogurt]]                  |
+|   1/2    |    cup    | [[2% Milk]]                               |
 #### Instructions
 
 1. Add all ingredients to a ninja blender single serve container

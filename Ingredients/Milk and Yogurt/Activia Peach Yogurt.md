@@ -1,0 +1,19 @@
+---
+Calories (kcal): 80
+Total Fat (g): 1.5
+Saturated Fat (g): 1
+Trans Fat (g): 0
+Cholesterol (mg): 5
+Sodium (mg): 60
+Total Carbohydrate (g): 13
+Dietary Fiber (g):
+Sugars (g): 9
+Protein (g): 4
+---
+#### Serving Size:
+
+| Number | Unit      |
+| :----: | :-------- |
+|   1    | container |
+|  113   | g         |
+#### Notes
