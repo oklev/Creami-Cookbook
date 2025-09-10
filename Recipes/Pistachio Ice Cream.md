@@ -20,7 +20,7 @@ Calorie range: 200-299
 |   1.5    | cup  | [[Vanilla Almond Milk]]               |
 |   1/4    | cup  | [[Sugar Free French Vanilla Creamer]] |
 |    3     | tbsp | [[Pistachio Instant Pudding Mix]]     |
-|   1/4    | tsp  | [[Almond Extract]]                    |
+|   1/4    | tsp  | Almond [[Extract]]                    |
 #### Instructions
 
 1. Whisk ingredients together
