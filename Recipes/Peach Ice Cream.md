@@ -1,24 +1,27 @@
 ---
-Calories (kcal): 244
-Total Fat (g): 4
-Saturated Fat (g): 2.5
-Trans Fat (g): 0
-Cholesterol (mg): 17
-Sodium (mg): 277
-Total Carbohydrate (g): 34
-Dietary Fiber (g): 2
-Sugars (g): 22
-Protein (g): 16.5
+Taste rating /5: 3
+Calorie range: 200-299
+
 ---
+#### Nutrition Facts
+| Calories (kcal) | 244 |
+| :-- | :--: |
+| Total Fat (g) | 4 |
+| Saturated Fat (g) | 2.5 |
+| Trans Fat (g) | 0 |
+| Cholesterol (mg) | 17 |
+| Sodium (mg) | 277 |
+| Total Carbohydrate (g) | 34 |
+| Dietary Fiber (g) | 2 |
+| Sugars (g) | 22 |
+| Protein (g) | 16.5 |
 #### Ingredients
-
-| Quantity | Unit      | Ingredient                           |
-| :------: | :-------- | ------------------------------------ |
-|    10    | piece     | [[Frozen Peach Slices]]              |
-|    1     | container | Vanilla [[Sugar Free Jello Pudding]] |
-|   1/2    | cup       | [[Greek Yogurt]]                     |
-|   1/2    | cup       | [[2% Milk]]                          |
-
+| Quantity | Unit | Ingredient |
+| :--: | :--: | :--- |
+| 10 | piece | [[Frozen Peach Slices]] |
+| 1 | container | Vanilla [[Sugar Free Jello Pudding Cups]] |
+| 1/2 | cup | [[Greek Yogurt]] |
+| 1/2 | cup | [[2% Milk]] |
 #### Instructions
 
 1. Add all ingredients to a ninja blender single serve container
@@ -26,10 +29,6 @@ Protein (g): 16.5
 3. Freeze overnight in creami pint
 4. Mix on "gelato" setting
 5. Add water and respin once or twice until smooth
-
-#### Rating
-
-#threestar out of 5 stars
 
 #### Comments
 

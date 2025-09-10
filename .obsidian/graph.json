@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:Ingredients/Fruit  ",
@@ -50,38 +50,255 @@
       }
     },
     {
-      "query": "path:Recipes tag:#onestar  ",
+      "query": "path:Recipes [\"calorie range\":\"200-299\"] [\"taste rating /5\":5]",
       "color": {
         "a": 1,
-        "rgb": 6982615
+        "rgb": 751860
       }
     },
     {
-      "query": "path:Recipes tag:#twostar  ",
+      "query": "path:Recipes [\"calorie range\":\"200-299\"] [\"taste rating /5\":4]",
       "color": {
         "a": 1,
-        "rgb": 5864675
+        "rgb": 2590709
       }
     },
     {
-      "query": "path:Recipes tag:#threestar  ",
+      "query": "path:Recipes [\"calorie range\":\"200-299\"] [\"taste rating /5\":3]",
       "color": {
         "a": 1,
-        "rgb": 3828441
+        "rgb": 6531320
       }
     },
     {
-      "query": "path:Recipes tag:#fourstar  ",
+      "query": "path:Recipes [\"calorie range\":\"200-299\"] [\"taste rating /5\":2]",
       "color": {
         "a": 1,
-        "rgb": 2771167
+        "rgb": 9421306
       }
     },
     {
-      "query": "path:Recipes tag:#fivestar  ",
+      "query": "path:Recipes [\"calorie range\":\"200-299\"] [\"taste rating /5\":1]",
       "color": {
         "a": 1,
-        "rgb": 15600
+        "rgb": 12311036
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"200-299\"]",
+      "color": {
+        "a": 1,
+        "rgb": 15200766
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"<200\"] [\"taste rating /5\":5]",
+      "color": {
+        "a": 1,
+        "rgb": 751860
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"<200\"] [\"taste rating /5\":4]",
+      "color": {
+        "a": 1,
+        "rgb": 2590709
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"<200\"] [\"taste rating /5\":3]",
+      "color": {
+        "a": 1,
+        "rgb": 6531320
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"<200\"] [\"taste rating /5\":2]",
+      "color": {
+        "a": 1,
+        "rgb": 9421306
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"<200\"] [\"taste rating /5\":1]",
+      "color": {
+        "a": 1,
+        "rgb": 12311036
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"<200\"]",
+      "color": {
+        "a": 1,
+        "rgb": 15200766
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"300-399\"] [\"taste rating /5\":5]",
+      "color": {
+        "a": 1,
+        "rgb": 6556660
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"300-399\"] [\"taste rating /5\":4]",
+      "color": {
+        "a": 1,
+        "rgb": 7743477
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"300-399\"] [\"taste rating /5\":3]",
+      "color": {
+        "a": 1,
+        "rgb": 10249208
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"300-399\"] [\"taste rating /5\":2]",
+      "color": {
+        "a": 1,
+        "rgb": 12095482
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"300-399\"] [\"taste rating /5\":1]",
+      "color": {
+        "a": 1,
+        "rgb": 13941756
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"300-399\"]",
+      "color": {
+        "a": 1,
+        "rgb": 15788030
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"400-499\"] [\"taste rating /5\":5]",
+      "color": {
+        "a": 1,
+        "rgb": 6556660
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"400-499\"] [\"taste rating /5\":4]",
+      "color": {
+        "a": 1,
+        "rgb": 7743477
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"400-499\"] [\"taste rating /5\":3]",
+      "color": {
+        "a": 1,
+        "rgb": 10249208
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"400-499\"] [\"taste rating /5\":2]",
+      "color": {
+        "a": 1,
+        "rgb": 12095482
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"400-499\"] [\"taste rating /5\":1]",
+      "color": {
+        "a": 1,
+        "rgb": 13941756
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"400-499\"]",
+      "color": {
+        "a": 1,
+        "rgb": 15788030
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"500-599\"] [\"taste rating /5\":5]",
+      "color": {
+        "a": 1,
+        "rgb": 14158836
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"500-599\"] [\"taste rating /5\":4]",
+      "color": {
+        "a": 1,
+        "rgb": 14493685
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"500-599\"] [\"taste rating /5\":3]",
+      "color": {
+        "a": 1,
+        "rgb": 15098872
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"500-599\"] [\"taste rating /5\":2]",
+      "color": {
+        "a": 1,
+        "rgb": 15568890
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"500-599\"] [\"taste rating /5\":1]",
+      "color": {
+        "a": 1,
+        "rgb": 16038908
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"500-599\"]",
+      "color": {
+        "a": 1,
+        "rgb": 16508926
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"600+\"] [\"taste rating /5\":5]",
+      "color": {
+        "a": 1,
+        "rgb": 14158836
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"600+\"] [\"taste rating /5\":4]",
+      "color": {
+        "a": 1,
+        "rgb": 14493685
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"600+\"] [\"taste rating /5\":3]",
+      "color": {
+        "a": 1,
+        "rgb": 15098872
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"600+\"] [\"taste rating /5\":2]",
+      "color": {
+        "a": 1,
+        "rgb": 15568890
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"600+\"] [\"taste rating /5\":1]",
+      "color": {
+        "a": 1,
+        "rgb": 16038908
+      }
+    },
+    {
+      "query": "path:Recipes [\"calorie range\":\"600+\"]",
+      "color": {
+        "a": 1,
+        "rgb": 16508926
       }
     }
   ],
@@ -95,6 +312,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1,
+  "scale": 2.25,
   "close": false
 }

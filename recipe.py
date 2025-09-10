@@ -2,19 +2,18 @@ import sys
 import os
 from glob import glob
 repo_dir = os.path.dirname(__file__)
+verbose = "-v" in sys.argv
 
-def main(recipe_name):
-    recipe_name = os.path.basename(recipe_name).split(".md")[0]    
-    Recipe(recipe_name).write()
-
-def to_number(s):
+def to_number(s, multiplier=1):
+    num = None
     if type(s) is str: 
         s = s.strip()
-        if not s: return 0
+        if not s: return None
         if '/' in s:
             num, denom = s.split('/')
-            return float(num) / float(denom)
-    num = float(s)
+            num = float(num) / float(denom)
+    if num is None: num = float(s)
+    num *= multiplier
     if int(num) == num:
         return int(num)
     return num
@@ -37,6 +36,7 @@ unit_conversions = [
 class Ingredient:
     def __init__(self,data):
         name = data["ingredient"].split("[[")[1].split("]]")[0].split("|")[0]
+        self.row = f"| {' | '.join(str(data[key]) for key in data)} |"
         self.quantity = to_number(data["quantity"])
         self.unit = data["unit"].strip().lower()
         
@@ -62,7 +62,7 @@ class Ingredient:
                 for measurement_type in unit_conversions:
                     if entry['unit'] in measurement_type:
                         for unit in measurement_type:
-                            self.serving_sizes[unit] = to_number(entry['number']) * measurement_type[unit] / measurement_type[entry['unit']]
+                            self.serving_sizes[unit] = to_number(entry['number'], measurement_type[unit] / measurement_type[entry['unit']])
                         break
             else:
                 self.serving_sizes[entry['unit']] = to_number(entry['number'])
@@ -71,10 +71,11 @@ class Ingredient:
         nutrition_facts_lines = self.content.split("---\n")[1].strip().split("\n")
         self.nutrition_facts = {}
         for line in nutrition_facts_lines:
-            self.nutrition_facts[line.split(":")[0]] = to_number(line.split(":")[1]) * self.quantity / self.serving_sizes[self.unit]
+            self.nutrition_facts[line.split(":")[0]] = to_number(line.split(":")[1], self.quantity / self.serving_sizes[self.unit])
         
-        print(self.name)
-        print(self.nutrition_facts)
+        if verbose:
+            print(self.name)
+            print(self.nutrition_facts)
     
     def __hash__(self):
         return hash(self.nutrition_facts)
@@ -93,26 +94,60 @@ class Recipe:
         self.ingredients = [Ingredient(entry) for entry in ingredients]
         
         # Sum nutrition facts
-        nutrition_facts_lines = self.content.split("---\n")[1].strip().split("\n")
-        self.nutrition_facts = {line.split(":")[0]: 0 for line in nutrition_facts_lines}
+        nutrition_facts = {
+            "Calories (kcal)":          None,
+            "Total Fat (g)":            None,
+            "Saturated Fat (g)":        None,
+            "Trans Fat (g)":            None,
+            "Cholesterol (mg)":         None,
+            "Sodium (mg)":              None,
+            "Total Carbohydrate (g)":   None,
+            "Dietary Fiber (g)":        None,
+            "Sugars (g)":               None,
+            "Protein (g)":              None
+        }
         for ingredient in self.ingredients:
-            for key in self.nutrition_facts:
-                self.nutrition_facts[key] += ingredient.nutrition_facts.get(key, 0)
+            for key in nutrition_facts:
+                macro = ingredient.nutrition_facts.get(key, None)
+                if nutrition_facts[key] is None:
+                    nutrition_facts[key] = ingredient.nutrition_facts.get(key, None)
+                elif macro is not None: nutrition_facts[key] += ingredient.nutrition_facts.get(key, 0)
         
-        for key in self.nutrition_facts:
-            if "(g)" in key:
-                self.nutrition_facts[key] = to_number(round(self.nutrition_facts[key]*2)/2)
-            else:
-                self.nutrition_facts[key] = int(round(self.nutrition_facts[key]))
+        self.nutrition_facts ={}
+        for key in nutrition_facts:
+            if nutrition_facts[key] is not None:
+                if "(g)" in key:
+                    # Round to nearest 0.5g
+                    self.nutrition_facts[key] = to_number(round(nutrition_facts[key]*2)/2)
+                else:
+                    # Round to nearest mg or kcal
+                    self.nutrition_facts[key] = int(round(nutrition_facts[key]))
         
     def write(self):
-        content = f"---\n"
-        for key in self.nutrition_facts:
-            content += f"{key}: {self.nutrition_facts[key]}\n"
-        content += f"---\n"
-        content += self.content.split("---\n",2)[2]
+        if self.nutrition_facts["Calories (kcal)"] < 200:
+            calorie_range = "<200"
+        elif self.nutrition_facts["Calories (kcal)"] >= 600: 
+            calorie_range = "600+"
+        else:
+            calorie_range = f"{(self.nutrition_facts['Calories (kcal)']//100)*100}-{(self.nutrition_facts['Calories (kcal)']//100)*100+99}"
+        content = self.content.replace(
+            "Calorie range:" + self.content.split("Calorie range:")[1].split("\n")[0],
+            f"Calorie range: {calorie_range}\n"
+        )
+        nutrition_facts = [f"| {key} | {self.nutrition_facts[key]} |" for key in self.nutrition_facts]
+        nutrition_facts.insert(1, "| :-- | :--: |")
+        content = content.replace(
+            "#### Nutrition Facts" + self.content.split("#### Nutrition Facts")[1].split("####")[0],
+            f"#### Nutrition Facts\n" + "\n".join(nutrition_facts) + "\n"
+        )
+        content = content.replace(
+            "#### Ingredients" + self.content.split("#### Ingredients")[1].split("####")[0],
+            f"#### Ingredients\n| Quantity | Unit | Ingredient |\n| :--: | :--: | :--- |\n" + "\n".join(i.row for i in self.ingredients) + "\n"
+        )
         with open(self.file,"w") as fo:
             fo.write(content)
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    for recipe in glob(os.path.join(repo_dir, "Recipes", "*.md")):
+        recipe_name = os.path.basename(recipe).split(".md")[0]    
+        Recipe(recipe_name).write()

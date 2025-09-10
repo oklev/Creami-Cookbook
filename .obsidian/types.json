@@ -16,6 +16,7 @@
     "Total Carbohydrate (g)": "number",
     "Dietary Fiber (g)": "number",
     "Sugars (g)": "number",
-    "Protein (g)": "number"
+    "Protein (g)": "number",
+    "Rating": "number"
   }
 }
