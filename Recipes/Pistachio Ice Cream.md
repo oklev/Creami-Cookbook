@@ -23,15 +23,17 @@ Protein (g): 1
 
 1. Whisk ingredients together
 2. Freeze overnight in creami pint
-3. Mix on "ice cream" setting
+3. Mix on "lite ice cream" setting
 4. Add almond milk and respin once or twice until smooth
 
 #### Rating
 
-#fivestar out of 5 stars
+unrated out of 5 stars
 
 #### Comments
 
 From https://www.foodbanjo.com/ninja-creami-pistachio-ice-cream/
 
-Trying a lower calorie version
+Trying a lower calorie version: Seeing if heavy whipping cream + sugar can be adequately replaced with [[Sugar Free French Vanilla Creamer]]. Seems like a long shot, but it cuts out about 600 calories...
+
+This version can probably be mixed on lite ice cream bc it's lower in fat
