@@ -91,7 +91,7 @@ class Recipe:
             self.content = file.read()
         
         ingredients = table_to_dict(self.content.split("#### Ingredients")[1].split("####")[0].strip())
-        self.ingredients = [Ingredient(entry) for entry in ingredients]
+        self.ingredients = [Ingredient(entry) for entry in ingredients if "[[" in entry["ingredient"]]
         
         # Sum nutrition facts
         nutrition_facts = {

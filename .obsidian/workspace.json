@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recipes/Pistachio Ice Cream.md",
+                "file": "Recipes/Peach Ice Cream.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pistachio Ice Cream"
+              "title": "Peach Ice Cream"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recipes/Pistachio Ice Cream.md",
+                "file": "Recipes/Peach Ice Cream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Pistachio Ice Cream"
+              "title": "Backlinks for Peach Ice Cream"
             }
           },
           {
@@ -169,33 +169,33 @@
   },
   "active": "c1a212123c32797b",
   "lastOpenFiles": [
-    "Ingredients/Sweeteners and Extracts/Extract.md",
-    "Recipes/Peach Ice Cream.md",
-    "Recipes/Pistachio Ice Cream.md",
+    "Recipes/Thin Mint Ice Cream.md",
     "Recipes/Blueberry Froyo.md",
     "Recipes/Butterfinger Ice Cream.md",
+    "Recipes/Cake Batter Ice Cream.md",
     "Recipes/Cherry Froyo.md",
     "Recipes/Just straight up chocolate pudding.md",
     "Recipes/Mixed Fruit Smoothie Bowl.md",
+    "Recipes/Peach Ice Cream.md",
+    "Recipes/Pistachio Ice Cream.md",
+    "Ingredients/Dairy/2% Cottage Cheese.md",
+    "Ingredients/Sweeteners and Extracts/salt.md",
+    "Ingredients/Sweeteners and Extracts/Stevia.md",
+    "Ingredients/Protein Powder/Thin Mint Protein Powder.md",
+    "Ingredients/Protein Powder/Dark Chocolate Protein Shake.md",
+    "Ingredients/Sweeteners and Extracts/Extract.md",
     "Ingredients/Pudding/Sugar Free Jello Pudding Cups.md",
-    "Ingredients/Milk and Yogurt/Activia Peach Yogurt.md",
+    "Ingredients/Dairy/Activia Peach Yogurt.md",
     "Templates/Recipe.md",
     "Templates/Ingredient.md",
-    "Ingredients/Milk and Yogurt/Activia Black Cherry Yogurt.md",
-    "Ingredients/Milk and Yogurt/Sugar Free French Vanilla Creamer.md",
+    "Ingredients/Dairy/Activia Black Cherry Yogurt.md",
+    "Ingredients/Dairy/Sugar Free French Vanilla Creamer.md",
     "Ingredients/Milk and Yogurt/Sugar Free French Vanilla.md",
     "Ingredients/Fruit/Frozen Mixed Berries.md",
-    "Ingredients/Milk and Yogurt/Heavy Whipping Cream.md",
+    "Ingredients/Dairy/Heavy Whipping Cream.md",
     "Ingredients/Pudding/Pistachio Instant Pudding Mix.md",
     "Ingredients/Sweeteners and Extracts/Splenda.md",
-    "Ingredients/Protein Powder/Chocolate Protein Powder.md",
-    "Ingredients/Protein Powder/PBfit chocolate.md",
-    "Ingredients/Milk and Yogurt/Vanilla Almond Milk.md",
-    "Ingredients/Pudding/Butterscotch Instant Pudding Mix.md",
-    "Ingredients/Milk and Yogurt/Activia Blueberry Yogurt.md",
     "Ingredients/Milk and Yogurt/Untitled",
-    "Ingredients/Milk and Yogurt/Activia Cherry Yogurt.md",
-    "Recipes/Just straight up frozen pudding.md",
     "Untitled.canvas",
     "Recipes/Untitled",
     "Recipes/3 stars",
@@ -205,7 +205,7 @@
     "recipe.py",
     "Ingredients/Pudding",
     "Ingredients/Sweeteners and Extracts",
-    "Ingredients/Milk and Yogurt",
+    "Ingredients/Dairy",
     "Ingredients/Protein Powder"
   ]
 }
