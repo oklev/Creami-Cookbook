@@ -1,20 +1,20 @@
 ---
-Calories (kcal): 168
-Total Fat (g): 0.5
-Saturated Fat (g): 0.5
+Calories (kcal): 270
+Total Fat (g): 4.5
+Saturated Fat (g): 3
 Trans Fat (g): 0
-Cholesterol (mg): 0
-Sodium (mg): 840
-Total Carbohydrate (g): 25
+Cholesterol (mg): 15
+Sodium (mg): 165
+Total Carbohydrate (g): 45
 Dietary Fiber (g): 0
-Sugars (g): 23.5
-Protein (g): 16
+Sugars (g): 36
+Protein (g): 12
 ---
 #### Ingredients
 
-| Quantity | Unit      | Ingredient                |
-| :------: | :-------- | ------------------------- |
-|    3     | container | [[Activia Cherry Yogurt]] |
+| Quantity | Unit      | Ingredient                      |
+| :------: | :-------- | ------------------------------- |
+|    3     | container | [[Activia Black Cherry Yogurt]] |
 
 #### Instructions
 
@@ -25,8 +25,8 @@ Protein (g): 16
 
 #### Rating
 
-#threestar out of 5 stars
+#fivestar out of 5 stars
 
 #### Comments
 
-A little sour for my taste but Sam likes it
+Super good!
