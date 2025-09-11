@@ -37,3 +37,5 @@ Trying a lower calorie version: Seeing if heavy whipping cream + sugar can be ad
 This version can probably be mixed on lite ice cream bc it's lower in fat
 
 It's pretty good, but tastes a bit of creamer and it's not as creamy as it should be. Going to try upping the pudding and going down in creamer a bit.
+
+This edition not too different but tastes marginally less of creamer. I think I'll stick with this creamer content, go back down to 2 tbsp pudding, try some xantham gum?
