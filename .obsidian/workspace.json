@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recipes/Pistachio Ice Cream.md",
+                "file": "Recipes/Thin Mint Ice Cream.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pistachio Ice Cream"
+              "title": "Thin Mint Ice Cream"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recipes/Pistachio Ice Cream.md",
+                "file": "Recipes/Thin Mint Ice Cream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Pistachio Ice Cream"
+              "title": "Backlinks for Thin Mint Ice Cream"
             }
           },
           {
@@ -169,6 +169,7 @@
   },
   "active": "c1a212123c32797b",
   "lastOpenFiles": [
+    "Recipes/Pistachio Ice Cream.md",
     "Recipes/Peach Ice Cream.md",
     "Recipes/Thin Mint Ice Cream.md",
     "Recipes/Blueberry Froyo.md",
@@ -177,7 +178,6 @@
     "Recipes/Cherry Froyo.md",
     "Recipes/Just straight up chocolate pudding.md",
     "Recipes/Mixed Fruit Smoothie Bowl.md",
-    "Recipes/Pistachio Ice Cream.md",
     "Ingredients/Dairy/2% Cottage Cheese.md",
     "Ingredients/Sweeteners and Extracts/salt.md",
     "Ingredients/Sweeteners and Extracts/Stevia.md",

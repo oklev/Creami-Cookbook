@@ -1,5 +1,5 @@
 ---
-Taste rating /5: 
+Taste rating /5: 2
 Calorie range: 300-399
 ---
 #### Nutrition Facts
@@ -30,3 +30,4 @@ Calorie range: 300-399
 
 #### Comments
 
+Too hard, not good, but I think the idea has promise.
