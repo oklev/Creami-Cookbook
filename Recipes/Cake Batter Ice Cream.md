@@ -3,17 +3,17 @@ Taste rating /5: 2
 Calorie range: 200-299
 ---
 #### Nutrition Facts
-| Calories (kcal) | 228 |
+| Calories (kcal) | 288 |
 | :-- | :--: |
-| Total Fat (g) | 5 |
-| Saturated Fat (g) | 1 |
+| Total Fat (g) | 8 |
+| Saturated Fat (g) | 2 |
 | Trans Fat (g) | 0 |
 | Cholesterol (mg) | 5 |
 | Sodium (mg) | 388 |
-| Total Carbohydrate (g) | 34.5 |
+| Total Carbohydrate (g) | 43.5 |
 | Dietary Fiber (g) | 1 |
-| Sugars (g) | 29 |
-| Protein (g) | 12.5 |
+| Sugars (g) | 35 |
+| Protein (g) | 18.5 |
 #### Ingredients
 | Quantity | Unit | Ingredient |
 | :--: | :--: | :--- |
@@ -22,12 +22,14 @@ Calorie range: 200-299
 | 2 | tbsp | [[PB2 Powdered Almond Butter]] |
 | 1 | tbsp | [[Splenda]] |
 | 1/4 | tsp | [[Cake Batter Extract]] |
+| 1 | tbsp | [[Rainbow Sprinkles]] |
 #### Instructions
 
-1. Mix together in blender
+1. Mix all ingredients except sprinkles together in blender
 2. Freeze overnight in creami pint
-3. Mix on "SETTING" setting
-4. Add LIQUID and respin once or twice until smooth
+3. Mix on "lite ice cream" setting
+4. Add almond milk and respin once or twice until smooth
+5. Add sprinkles and run on "mix in"
 
 #### Comments
 
