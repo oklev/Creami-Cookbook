@@ -15,7 +15,7 @@
       }
     },
     {
-      "query": "path:\"Ingredients/Milk and Yogurt\"  ",
+      "query": "path:\"Ingredients/Base\"  ",
       "color": {
         "a": 1,
         "rgb": 13877143
@@ -29,17 +29,17 @@
       }
     },
     {
-      "query": "path:Ingredients/Pudding  ",
+      "query": "path:Ingredients/Creamification  ",
       "color": {
         "a": 1,
         "rgb": 11494930
       }
     },
     {
-      "query": "path:\"Ingredients/Sweeteners and Extracts\"  ",
+      "query": "path:\"Ingredients/Extracts and Sweeteners\"  ",
       "color": {
         "a": 1,
-        "rgb": 14606224
+        "rgb": 9605756
       }
     },
     {
