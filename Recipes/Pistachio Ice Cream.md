@@ -15,12 +15,12 @@ Calorie range: 200-299
 | Sugars (g) | 40.5 |
 | Protein (g) | 1.5 |
 #### Ingredients
-| Quantity | Unit | Ingredient |
-| :--: | :--: | :--- |
-| 1.5 | cup | [[Vanilla Almond Milk]] |
-| 1/4 | cup | [[Sugar Free French Vanilla Creamer]] |
-| 3 | tbsp | [[Pistachio Instant Pudding Mix]] |
-| 1/4 | tsp | Almond [[Extract]] |
+| Quantity | Unit | Ingredient                            |
+| :------: | :--: | :------------------------------------ |
+|   1.5    | cup  | [[Vanilla Almond Milk]]               |
+|   1/4    | cup  | [[Sugar Free French Vanilla Creamer]] |
+|    2     | tbsp | [[Pistachio Instant Pudding Mix]]     |
+|   1/4    | tsp  | Almond [[Extract]]                    |
 #### Instructions
 
 1. Whisk ingredients together
@@ -39,3 +39,5 @@ This version can probably be mixed on lite ice cream bc it's lower in fat
 It's pretty good, but tastes a bit of creamer and it's not as creamy as it should be. Going to try upping the pudding and going down in creamer a bit.
 
 This edition not too different but tastes marginally less of creamer. I think I'll stick with this creamer content, go back down to 2 tbsp pudding, try some xantham gum?
+
+Testing both: 1/4 cup [[2% Cottage Cheese]] vs 1/4 tsp [[Xantham Gum]]
