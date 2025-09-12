@@ -15,13 +15,13 @@ Calorie range: 200-299
 | Sugars (g) | 40.5 |
 | Protein (g) | 9.5 |
 #### Ingredients
-| Quantity |   Unit    | Ingredient                          |
-| :------: | :-------: | :---------------------------------- |
-|    10    |   piece   | [[Frozen Peach Slices]]             |
-|    2     | container | [[Activia Peach Yogurt]]            |
-|   1/2    |    cup    | Unsweetened [[Vanilla Almond Milk]] |
-|   1/2    |    tsp    | Vanilla [[Extract]]                 |
-|    1     |    tsp    | [[Splenda]]                         |
+| Quantity | Unit | Ingredient |
+| :--: | :--: | :--- |
+| 10 | piece | [[Frozen Peach Slices]] |
+| 2 | container | [[Activia Peach Yogurt]] |
+| 1/2 | cup | Unsweetened [[Vanilla Almond Milk]] |
+| 1/2 | tsp | Vanilla [[Extract]] |
+| 1 | tsp | [[Splenda]] |
 #### Instructions
 
 1. Add all ingredients to a ninja blender single serve container

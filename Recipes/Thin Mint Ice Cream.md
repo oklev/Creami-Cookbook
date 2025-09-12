@@ -3,24 +3,25 @@ Taste rating /5: 2
 Calorie range: 300-399
 ---
 #### Nutrition Facts
-| Calories (kcal) | 342 |
+| Calories (kcal) | 345 |
 | :-- | :--: |
-| Total Fat (g) | 8.5 |
+| Total Fat (g) | 7 |
 | Saturated Fat (g) | 2 |
 | Trans Fat (g) | 0 |
-| Cholesterol (mg) | 44 |
-| Sodium (mg) | 509 |
-| Total Carbohydrate (g) | 13.5 |
-| Dietary Fiber (g) | 3 |
-| Sugars (g) | 7.5 |
-| Protein (g) | 51 |
+| Cholesterol (mg) | 40 |
+| Sodium (mg) | 778 |
+| Total Carbohydrate (g) | 44 |
+| Dietary Fiber (g) | 1 |
+| Sugars (g) | 27.5 |
+| Protein (g) | 28.5 |
 #### Ingredients
 | Quantity | Unit | Ingredient |
 | :--: | :--: | :--- |
-| 1 | container | [[Dark Chocolate Protein Shake]] |
+| 300 | ml | [[Vanilla Almond Milk]] |
 | 1 | scoop | [[Thin Mint Protein Powder]] |
-| 1/3 | cup | [[Greek Yogurt]] |
+| 19 | g | [[PB2 Double Chocolate Chip Cookie Mix]] |
 | 1/8 | tsp | Peppermint [[Extract]] |
+| 15 | g | [[Sugar Free Chocolate Instant Pudding Mix]] |
 #### Instructions
 
 1. Mix together
@@ -30,4 +31,4 @@ Calorie range: 300-399
 
 #### Comments
 
-Too hard, not good, but I think the idea has promise.
+Trying a recipe based on [[Butterfinger Ice Cream]] recipe.
