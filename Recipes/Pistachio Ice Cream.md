@@ -3,24 +3,24 @@ Taste rating /5: 4
 Calorie range: 200-299
 ---
 #### Nutrition Facts
-| Calories (kcal) | 274 |
+| Calories (kcal) | 237 |
 | :-- | :--: |
-| Total Fat (g) | 8.5 |
+| Total Fat (g) | 8 |
 | Saturated Fat (g) | 0 |
 | Trans Fat (g) | 0 |
 | Cholesterol (mg) | 0 |
-| Sodium (mg) | 679 |
-| Total Carbohydrate (g) | 48 |
+| Sodium (mg) | 533 |
+| Total Carbohydrate (g) | 39 |
 | Dietary Fiber (g) | 0 |
-| Sugars (g) | 40.5 |
+| Sugars (g) | 33.5 |
 | Protein (g) | 1.5 |
 #### Ingredients
-| Quantity | Unit | Ingredient                            |
-| :------: | :--: | :------------------------------------ |
-|   1.5    | cup  | [[Vanilla Almond Milk]]               |
-|   1/4    | cup  | [[Sugar Free French Vanilla Creamer]] |
-|    2     | tbsp | [[Pistachio Instant Pudding Mix]]     |
-|   1/4    | tsp  | [[Almond Extract]]                    |
+| Quantity | Unit | Ingredient |
+| :--: | :--: | :--- |
+| 1.5 | cup | [[Vanilla Almond Milk]] |
+| 1/4 | cup | [[Sugar Free French Vanilla Creamer]] |
+| 2 | tbsp | [[Pistachio Instant Pudding Mix]] |
+| 1/4 | tsp | [[Almond Extract]] |
 #### Instructions
 
 1. Whisk ingredients together

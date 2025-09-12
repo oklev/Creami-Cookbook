@@ -15,13 +15,13 @@ Calorie range: 300-399
 | Sugars (g) | 27.5 |
 | Protein (g) | 28.5 |
 #### Ingredients
-| Quantity | Unit  | Ingredient                                   |
-| :------: | :---: | :------------------------------------------- |
-|   300    |  ml   | [[Vanilla Almond Milk]]                      |
-|    1     | scoop | [[Thin Mint Protein Powder]]                 |
-|    19    |   g   | [[PB2 Double Chocolate Chip Cookie Mix]]     |
-|   1/8    |  tsp  | [[Peppermint Extract]]                       |
-|    15    |   g   | [[Sugar Free Chocolate Instant Pudding Mix]] |
+| Quantity | Unit | Ingredient |
+| :--: | :--: | :--- |
+| 300 | ml | [[Vanilla Almond Milk]] |
+| 1 | scoop | [[Thin Mint Protein Powder]] |
+| 19 | g | [[PB2 Double Chocolate Chip Cookie Mix]] |
+| 1/8 | tsp | [[Peppermint Extract]] |
+| 15 | g | [[Sugar Free Chocolate Instant Pudding Mix]] |
 #### Instructions
 
 1. Mix together

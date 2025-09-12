@@ -16,6 +16,7 @@ Protein (g):
 | :----: | :------ |
 |  1/6   | package |
 |   10   | g       |
+|   1    | tbsp    |
 #### Notes
 
 #pudding-mix #pudding

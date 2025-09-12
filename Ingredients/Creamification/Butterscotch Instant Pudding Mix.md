@@ -16,6 +16,7 @@ Protein (g): 0
 | :----: | :------ |
 |  1/4   | package |
 |   13   | g       |
+|   4    | tsp     |
 #### Notes
 
 Royal brand #pudding-mix #pudding
