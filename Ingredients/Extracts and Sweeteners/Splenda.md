@@ -18,4 +18,4 @@ Protein (g): 0
 |   4    | g    |
 #### Notes
 
-Splenda for baking 2:1
+Splenda #sweetener for baking 2:1

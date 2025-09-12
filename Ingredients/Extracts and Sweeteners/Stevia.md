@@ -19,3 +19,7 @@ Protein (g): 0
 |   8    | oz      |
 |  1/4   | tsp     |
 #### Notes
+
+zero calorie #sweetener
+
+better for fruity ice creams?

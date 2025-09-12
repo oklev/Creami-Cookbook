@@ -18,4 +18,4 @@ Protein (g): 0
 |   13   | g       |
 #### Notes
 
-Royal brand
+Royal brand #pudding-mix

@@ -18,4 +18,4 @@ Protein (g): 1
 |  240   | ml   |
 #### Notes
 
-Almond Breeze
+Almond Breeze #milk

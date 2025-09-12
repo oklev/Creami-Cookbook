@@ -17,3 +17,5 @@ Protein (g): 8
 |   1    | cup  |
 |  240   | ml   |
 #### Notes
+
+#dairy #milk

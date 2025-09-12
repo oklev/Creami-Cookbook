@@ -18,3 +18,5 @@ Protein (g): 0
 |   24   | g       |
 |  2.4   | tbsp    |
 #### Notes
+
+#pudding-mix
