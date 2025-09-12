@@ -19,4 +19,4 @@ Protein (g): 0
 |  2.4   | tbsp    |
 #### Notes
 
-#pudding-mix
+#pudding-mix #pudding

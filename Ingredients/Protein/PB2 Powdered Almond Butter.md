@@ -18,4 +18,4 @@ Protein (g): 5
 |   13   | g    |
 #### Notes
 
-#PBfit
+#PBfit #high-protein

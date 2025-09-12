@@ -18,4 +18,4 @@ Protein (g): 16
 |  170   | g    |
 #### Notes
 
-Chobani Nonfat plain #dairy #yogurt 
+Chobani Nonfat plain #dairy #yogurt #high-protein

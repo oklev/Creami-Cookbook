@@ -20,4 +20,4 @@ Protein (g): 21
 
 https://a.co/d/aEQsgy9
 
-#protein-powder
+#protein-powder #high-protein

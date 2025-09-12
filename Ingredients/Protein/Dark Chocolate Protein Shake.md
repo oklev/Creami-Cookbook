@@ -17,4 +17,4 @@ Protein (g): 20
 |   1    | container |
 |  355   | ml        |
 #### Notes
-Owyn brand
+Owyn brand #high-protein

@@ -18,4 +18,4 @@ Protein (g):
 |   10   | g       |
 #### Notes
 
-#pudding-mix
+#pudding-mix #pudding

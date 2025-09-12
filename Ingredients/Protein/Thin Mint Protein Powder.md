@@ -18,4 +18,4 @@ Protein (g): 24
 |   32   | g     |
 #### Notes
 
-#protein-powder
+#protein-powder #high-protein

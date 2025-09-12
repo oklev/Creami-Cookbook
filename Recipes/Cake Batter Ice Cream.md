@@ -15,13 +15,13 @@ Calorie range: 200-299
 | Sugars (g) | 29 |
 | Protein (g) | 12.5 |
 #### Ingredients
-| Quantity | Unit | Ingredient |
+| Quantity | Unit | Ingredient                          |
 | :--: | :--: | :--- |
 | 1 | cup | Unsweetened [[Vanilla Almond Milk]] |
-| 1/4 | cup | [[2% Cottage Cheese]] |
-| 2 | tbsp | [[PB2 Powdered Almond Butter]] |
-| 1 | tbsp | [[Splenda]] |
-| 1/4 | tsp | Cake Batter [[Extract]] |
+| 1/4 | cup | [[2% Cottage Cheese]]               |
+| 2 | tbsp | [[PB2 Powdered Almond Butter]]      |
+| 1 | tbsp | [[Splenda]]                         |
+| 1/4 | tsp | [[Cake Batter Extract]]             |
 #### Instructions
 
 1. Mix together in blender

@@ -20,4 +20,4 @@ Protein (g): 24
 
 Equate brand
 
-#protein-powder
+#protein-powder #high-protein
