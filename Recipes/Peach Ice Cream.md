@@ -1,5 +1,5 @@
 ---
-Taste rating /5: 
+Taste rating /5: 3
 Calorie range: 200-299
 ---
 #### Nutrition Facts
@@ -28,8 +28,8 @@ Calorie range: 200-299
 2. Blend
 3. Freeze overnight in creami pint
 4. Mix on "gelato" setting
-5. Add water and respin once or twice until smooth
+5. Add peach juice and respin once or twice until smooth
 
 #### Comments
 
-Still needs some work but it's passable! The protein powder was the culprit for the artificial taste, apparently. The peach flavor is still not very strong. Next time I may try with peach flavored yogurt or adding peach juice or something.
+Peach flavor was strong with this recipe but it was too sweet. Added a bunch of peach nectar juice and some lemon juice and it was pretty okay! Still needs work.
