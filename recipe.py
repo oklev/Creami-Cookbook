@@ -122,6 +122,10 @@ class Recipe:
                 else:
                     # Round to nearest mg or kcal
                     self.nutrition_facts[key] = int(round(nutrition_facts[key]))
+        self.high_protein = False
+        try:
+            if self.nutrition_facts["Calories (kcal)"] < 10*self.nutrition_facts["Protein (g)"]: self.high_protein = True
+        except TypeError: pass
         
     def write(self):
         if self.nutrition_facts["Calories (kcal)"] < 200:
@@ -133,6 +137,10 @@ class Recipe:
         content = self.content.replace(
             "Calorie range:" + self.content.split("Calorie range:")[1].split("\n")[0],
             f"Calorie range: {calorie_range}"
+        )
+        content = self.content.replace(
+            "High Protein:" + self.content.split("High Protein:")[1].split("\n")[0],
+            "High Protein: " + f"{self.high_protein}".lower()
         )
         nutrition_facts = [f"| {key} | {self.nutrition_facts[key]} |" for key in self.nutrition_facts]
         nutrition_facts.insert(1, "| :-- | :--: |")

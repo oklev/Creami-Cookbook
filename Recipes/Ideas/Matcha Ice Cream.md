@@ -1,6 +1,7 @@
 ---
 Taste rating /5: 
 Calorie range:
+High Protein: false
 ---
 #### Nutrition Facts
 #### Ingredients

@@ -17,6 +17,7 @@
     "Dietary Fiber (g)": "number",
     "Sugars (g)": "number",
     "Protein (g)": "number",
-    "Rating": "number"
+    "Rating": "number",
+    "High Protein": "checkbox"
   }
 }
