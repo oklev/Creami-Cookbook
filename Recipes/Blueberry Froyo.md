@@ -1,25 +1,26 @@
 ---
 Taste rating /5: 4
-Calorie range: 200-299
+Calorie range: 300-399
 ---
 #### Nutrition Facts
-| Calories (kcal) | 240 |
+| Calories (kcal) | 370 |
 | :-- | :--: |
-| Total Fat (g) | 4.5 |
-| Saturated Fat (g) | 3 |
+| Total Fat (g) | 7 |
+| Saturated Fat (g) | 5 |
 | Trans Fat (g) | 0 |
-| Cholesterol (mg) | 15 |
-| Sodium (mg) | 180 |
-| Total Carbohydrate (g) | 42 |
-| Sugars (g) | 27 |
-| Protein (g) | 12 |
+| Cholesterol (mg) | 25 |
+| Sodium (mg) | 380 |
+| Total Carbohydrate (g) | 59.5 |
+| Sugars (g) | 38 |
+| Protein (g) | 22.5 |
 #### Ingredients
 | Quantity | Unit | Ingredient |
 | :--: | :--: | :--- |
-| 3 | container | [[Activia Blueberry Yogurt]] |
+| 4 | container | [[Activia Blueberry Yogurt]] |
+| 1/4 | cup | [[2% Cottage Cheese]] |
 #### Instructions
 
-1. Just straight up blueberry yogurt
+1. Mix together
 2. Freeze overnight in creami pint
 3. Mix on "ice cream" setting
 4. Add water or milk and respin once or twice until smooth
@@ -27,3 +28,5 @@ Calorie range: 200-299
 #### Comments
 
 Like 4.5 stars. Very good straight up, froyo for breakfast!
+
+Adding cottage cheese gives a creamier texture
