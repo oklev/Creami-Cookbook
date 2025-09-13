@@ -9,6 +9,9 @@ Total Carbohydrate (g): 8.4
 Dietary Fiber (g): 
 Sugars (g): 7.9
 Protein (g): 5.4
+Gluten Free: true
+Dairy Free: false
+Vegan: false
 ---
 #### Serving Size:
 
@@ -20,4 +23,4 @@ Protein (g): 5.4
 
 Weirdly hard to find online
 
-#activia #yogurt #dairy
+#activia #yogurt

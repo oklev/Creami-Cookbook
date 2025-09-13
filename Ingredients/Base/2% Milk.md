@@ -9,6 +9,9 @@ Total Carbohydrate (g): 12
 Dietary Fiber (g): 0
 Sugars (g): 12
 Protein (g): 8
+Gluten Free: true
+Dairy Free: false
+Vegan: false
 ---
 #### Serving Size:
 
@@ -18,4 +21,4 @@ Protein (g): 8
 |  240   | ml   |
 #### Notes
 
-#dairy #milk
+#milk

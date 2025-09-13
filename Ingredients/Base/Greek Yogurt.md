@@ -9,6 +9,9 @@ Total Carbohydrate (g): 6
 Dietary Fiber (g): 0
 Sugars (g): 6
 Protein (g): 16
+Gluten Free: true
+Dairy Free: false
+Vegan: false
 ---
 #### Serving Size:
 
@@ -18,4 +21,4 @@ Protein (g): 16
 |  170   | g    |
 #### Notes
 
-Chobani Nonfat plain #dairy #yogurt #high-protein
+Chobani Nonfat plain #yogurt #high-protein

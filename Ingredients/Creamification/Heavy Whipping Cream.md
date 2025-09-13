@@ -9,6 +9,9 @@ Total Carbohydrate (g):
 Dietary Fiber (g): 0
 Sugars (g): 
 Protein (g): 0
+Gluten Free: true
+Dairy Free: false
+Vegan: false
 ---
 #### Serving Size:
 
@@ -17,4 +20,4 @@ Protein (g): 0
 |   1    | tbsp |
 #### Notes
 
-#dairy
+#cream

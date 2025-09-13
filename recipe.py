@@ -70,8 +70,12 @@ class Ingredient:
         # Parse nutrition facts
         nutrition_facts_lines = self.content.split("---\n")[1].strip().split("\n")
         self.nutrition_facts = {}
+        self.dietary_restrictions = {}
         for line in nutrition_facts_lines:
-            self.nutrition_facts[line.split(":")[0]] = to_number(line.split(":")[1], self.quantity / self.serving_sizes[self.unit])
+            if "(" in line:
+                self.nutrition_facts[line.split(":")[0]] = to_number(line.split(":")[1], self.quantity / self.serving_sizes[self.unit])
+            else:
+                self.dietary_restrictions[line.split(":")[0]] = line.split(":")[1].strip()
         
         if verbose:
             print(self.name)
@@ -106,12 +110,20 @@ class Recipe:
             "Sugars (g)":               None,
             "Protein (g)":              None
         }
+        self.dietary_restrictions = {
+            "Gluten Free": True,
+            "Dairy Free": True,
+            "Vegan": True
+        }
         for ingredient in self.ingredients:
             for key in nutrition_facts:
                 macro = ingredient.nutrition_facts.get(key, None)
                 if nutrition_facts[key] is None:
                     nutrition_facts[key] = ingredient.nutrition_facts.get(key, None)
                 elif macro is not None: nutrition_facts[key] += ingredient.nutrition_facts.get(key, 0)
+            for key in self.dietary_restrictions:
+                if ingredient.dietary_restrictions.get(key, "false") == "false": 
+                    self.dietary_restrictions[key] = False
         
         self.nutrition_facts ={}
         for key in nutrition_facts:
@@ -128,26 +140,35 @@ class Recipe:
         except TypeError: pass
         
     def write(self):
+        content = self.content
+        
+        # Update diet tags
+        tags = {
+            "Calorie range": None,
+            "High Protein": f"{self.high_protein}".lower(),
+            "Gluten Free": f"{self.dietary_restrictions.get('Gluten Free', 'false')}".lower(),
+            "Dairy Free": f"{self.dietary_restrictions.get('Dairy Free', 'false')}".lower(),
+            "Vegan": f"{self.dietary_restrictions.get('Vegan', 'false')}".lower()
+        }
         if self.nutrition_facts["Calories (kcal)"] < 200:
-            calorie_range = "<200"
+            tags["Calorie range"] = "<200"
         elif self.nutrition_facts["Calories (kcal)"] >= 600: 
-            calorie_range = "600+"
+            tags["Calorie range"] = "600+"
         else:
-            calorie_range = f"{(self.nutrition_facts['Calories (kcal)']//100)*100}-{(self.nutrition_facts['Calories (kcal)']//100)*100+99}"
-        content = self.content.replace(
-            "Calorie range:" + self.content.split("Calorie range:")[1].split("\n")[0],
-            f"Calorie range: {calorie_range}"
-        )
-        content = self.content.replace(
-            "High Protein:" + self.content.split("High Protein:")[1].split("\n")[0],
-            "High Protein: " + f"{self.high_protein}".lower()
-        )
+            tags["Calorie range"] = f"{(self.nutrition_facts['Calories (kcal)']//100)*100}-{(self.nutrition_facts['Calories (kcal)']//100)*100+99}"
+        for tag in tags:
+            content = content.replace(
+                f"{tag}:" + content.split(f"{tag}:")[1].split("\n")[0],
+                f"{tag}: {tags[tag]}"
+            )
+        # Update nutrition facts
         nutrition_facts = [f"| {key} | {self.nutrition_facts[key]} |" for key in self.nutrition_facts]
         nutrition_facts.insert(1, "| :-- | :--: |")
         content = content.replace(
             "#### Nutrition Facts" + self.content.split("#### Nutrition Facts")[1].split("####")[0],
             f"#### Nutrition Facts\n" + "\n".join(nutrition_facts) + "\n"
         )
+        # Respace ingredients
         content = content.replace(
             "#### Ingredients" + self.content.split("#### Ingredients")[1].split("####")[0],
             f"#### Ingredients\n| Quantity | Unit | Ingredient |\n| :--: | :--: | :--- |\n" + "\n".join(i.row for i in self.ingredients) + "\n"

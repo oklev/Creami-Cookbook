@@ -18,6 +18,9 @@
     "Sugars (g)": "number",
     "Protein (g)": "number",
     "Rating": "number",
-    "High Protein": "checkbox"
+    "High Protein": "checkbox",
+    "Gluten Free": "checkbox",
+    "Dairy Free": "checkbox",
+    "Vegan": "checkbox"
   }
 }

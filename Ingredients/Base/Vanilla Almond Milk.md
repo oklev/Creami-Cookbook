@@ -9,6 +9,9 @@ Total Carbohydrate (g): 14
 Dietary Fiber (g): 
 Sugars (g): 13
 Protein (g): 1
+Gluten Free: true
+Dairy Free: true
+Vegan: true
 ---
 #### Serving Size:
 

@@ -1,7 +1,10 @@
 ---
 Taste rating /5: 4
-Calorie range:
+Calorie range: 200-299
 High Protein: true
+Gluten Free: true
+Dairy Free: false
+Vegan: false
 ---
 #### Nutrition Facts
 | Calories (kcal) | 268 |
