@@ -1,0 +1,33 @@
+---
+Taste rating /5:
+Calorie range:
+High Protein: false
+---
+#### Nutrition Facts
+| Calories (kcal) | 327 |
+| :-- | :--: |
+| Total Fat (g) | 7 |
+| Saturated Fat (g) | 0 |
+| Trans Fat (g) | 0 |
+| Cholesterol (mg) | 0 |
+| Sodium (mg) | 748 |
+| Total Carbohydrate (g) | 51.5 |
+| Dietary Fiber (g) | 5 |
+| Sugars (g) | 38 |
+| Protein (g) | 14 |
+#### Ingredients
+| Quantity | Unit | Ingredient |
+| :--: | :--: | :--- |
+| 300 | ml | [[Vanilla Almond Milk]] |
+| 15 | g | [[Butterscotch Instant Pudding Mix]] |
+| 5 | tbsp | [[PBfit chocolate]] |
+#### Instructions
+
+1. Whisk together in pint
+2. Freeze overnight in creami pint
+3. Mix on "gelato(?)" setting
+4. Add vanilla almond milk and respin once or twice until smooth
+
+#### Comments
+
+Per request
