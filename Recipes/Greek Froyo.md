@@ -21,7 +21,7 @@ Vegan: false
 #### Ingredients
 | Quantity | Unit | Ingredient |
 | :--: | :--: | :--- |
-| 1.5 | cup | [[Greek Yogurt]] |
+| 1 1/2 | cup | [[Greek Yogurt]] |
 | 1 | tbsp | [[Splenda]] |
 | 1/2 | tsp | [[Vanilla Bean Paste]] |
 | 1/2 | cup | [[Fresh Blueberries]] |

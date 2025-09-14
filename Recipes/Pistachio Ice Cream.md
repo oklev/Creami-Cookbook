@@ -21,7 +21,7 @@ Vegan: false
 #### Ingredients
 | Quantity | Unit | Ingredient |
 | :--: | :--: | :--- |
-| 1.5 | cup | [[Vanilla Almond Milk]] |
+| 1 1/2 | cup | [[Vanilla Almond Milk]] |
 | 1/4 | cup | [[2% Cottage Cheese]] |
 | 3 | tbsp | [[Pistachio Instant Pudding Mix]] |
 | 1/4 | tsp | [[Almond Extract]] |
