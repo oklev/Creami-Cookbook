@@ -19,14 +19,14 @@ Vegan: false
 | Sugars (g) | 43.5 |
 | Protein (g) | 14 |
 #### Ingredients
-| Quantity | Unit | Ingredient |
-| :--: | :--: | :--- |
-| 1.5 | cup | [[Vanilla Almond Milk]] |
-| 1/4 | cup | [[2% Cottage Cheese]] |
-| 3 | tbsp | [[Pistachio Instant Pudding Mix]] |
-| 1/4 | tsp | [[Almond Extract]] |
-| 1/4 | cup | [[Sugar Free French Vanilla Creamer]] |
-| 1/4 | cup | [[Chopped almonds]] |
+| Quantity | Unit | Ingredient                        |
+| :------: | :--: | :-------------------------------- |
+|   1.5    | cup  | [[Vanilla Almond Milk]]           |
+|   1/4    | cup  | [[2% Cottage Cheese]]             |
+|    3     | tbsp | [[Pistachio Instant Pudding Mix]] |
+|   1/4    | tsp  | [[Almond Extract]]                |
+|    2     | tbsp | [[PB2 Powdered Almond Butter]]]   |
+|   1/4    | cup  | [[Chopped almonds]]               |
 #### Instructions
 
 1. Whisk ingredients together
@@ -54,3 +54,5 @@ Xantham gum: I think it needs a bit more, maybe try 1/2 tsp?
 2% cottage cheese was pretty creamy but too much ice crystals. going to try 1) spin on gelato instead of lite ice cream; 2) add in creamer during respin instead of before freezing 
 
 It was also a little low on pistachio flavor so might go back to 3 tbsp pudding when adding cottage cheese (or maybe next time use them to replace some of the milk??)
+
+I ended up not putting in the vanilla creamer. Was an improvement but it's still missing something. A little body maybe? Maybe needs a source of protein like the other recipes to bind everything together? Trying +2 tbsp PB2 almond butter powder.
