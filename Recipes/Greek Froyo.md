@@ -1,5 +1,5 @@
 ---
-Taste rating /5: 4
+Taste rating /5: 5
 Calorie range: 200-299
 High Protein: true
 Gluten Free: true
@@ -35,3 +35,4 @@ Vegan: false
 
 #### Comments
 
+Gotta upgrade this, it's really good esp with granola
