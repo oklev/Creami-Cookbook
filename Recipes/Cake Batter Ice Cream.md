@@ -37,6 +37,6 @@ Vegan: false
 
 #### Comments
 
-Loosely based on https://thepeachiespoon.com/blogs/recipes/high-protein-cake-batter-ninja-creami-blizzard?srsltid=AfmBOorc3VfJq2tNqtpbfUk131rfGWybxsUHkik956AKwA2D1KsQ1GGE
+Loosely based on https://thepeachiespoon.com/blogs/recipes/high-protein-cake-batter-ninja-creami-blizzard?srsltid=AfmBOorc3VfJq2tNqtpbfUk131rfGWybxsUHkik956AKwA2D1KsQ1GGE + the butterfinger recipe
 
-Tasted very artificial, a little salty, and much too strongly of extract. Cut back extract to 1/4. Replaced vanilla protein powder (seems to be a common culprint for artificial taste) with almond butter powder. Remove added salt.
+It's good!! The only potential change I might try is 3 tbsp PB2 instead of 2?
