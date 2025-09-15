@@ -5,10 +5,10 @@ import json
 repo_dir = os.path.dirname(__file__)
 ingredient_dir = os.path.join(repo_dir, "Ingredients")
 verbose = "-v" in sys.argv
-unit_conversions = [
-    {"cup":1,"ml":236.588,"tbsp":16,"tsp":48,"fl oz":8,"l":0.236588,"pt":0.5,"qt":0.25,"gal":0.0625,"cups":1,"c":1,"T":16,"t":48,"gallon":0.0625,"pint":0.5,"quart":0.25,"fl oz":8,"fluid ounce":8},
-    {"g":1,"oz":0.035274,"gram":1,"grams":1}
-]
+unit_conversions = {
+    "Volume":{"cup":1,"ml":236.588,"tbsp":16,"tsp":48,"fl oz":8,"l":0.236588,"pt":0.5,"qt":0.25,"gal":0.0625,"cups":1,"c":1,"T":16,"t":48,"gallon":0.0625,"pint":0.5,"quart":0.25,"fl oz":8,"fluid ounce":8},
+    "Weight":{"g":1,"oz":0.035274,"gram":1,"grams":1}
+}
 ingredients = {}
 properties = {}
 property_types = {}
@@ -54,21 +54,77 @@ def to_str(s):
     elif whole == 0 and closest: return closest
     else: return f"{whole} {closest}".strip()
 
-def to_line(line):
-    number, unit, ingredient = line
-    if unit in ("cup","tbsp","tsp"): number = to_str(number)
-    else: number = round(number,0)
-    return f"| {number} | {unit} | {ingredient} |"
+def to_imperial(ml):
+    whole = 0
+    if ml > 236:
+        mod = ml % 236
+        whole = int((ml-mod)/236)
+        ml = mod
+    conversion = {
+        236:"1 cup",
+        177:"3/4 cup",
+        158:"2/3 cup",
+        118:"1/2 cup",
+        79:"1/3 cup",
+        59:"1/4 cup"
+    }
+    if whole == 0:
+        conversion.update(
+            {
+                44:"3 tbsp",
+                37:"2 1\2 tbsp",
+                30:"2 tbsp",
+                22:"1 1/2 tbsp",
+                15:"1 tbsp",
+                11:"3/4 tbsp",
+                10:"2 tsp",
+                7:"1/2 tbsp",
+                5:"1 tsp",
+                4:"1/4 tbsp",
+                2.5:"1/2 tsp",
+                1.2:"1/4 tsp",
+                0.6:"1/8 tsp"
+            }
+        )
+    else:
+        conversion.update(
+            {0:"cup"}
+        )
+    dist = {abs(ml - f):f for f in conversion}
+    fraction = conversion[dist[min(dist)]]
+    if fraction == "1 cup":
+        whole += 1
+        fraction = "cup"
+    if whole: fraction = f"{whole} {fraction}"
+    return fraction
 
-def table_to_dict(table_str):
+def to_other(amount, unit):
+    rounded = round(amount*2)/2
+    if rounded > 0 and rounded == int(rounded): return f"{int(rounded)} {unit}"
+    if amount > 0.4 and amount < 0.6: return f"1/2 {unit}"
+    if amount > 1: return f"{int(rounded)} 1/2"
+    else: return ""
+
+def table_to_dict(table_str,link_required=False):
     lines = [line.strip() for line in table_str.strip().split("\n") if line.strip()]
-    headers = [h.strip().lower() for h in lines[0].split('|') if h.strip()]
-    data = []
-    for line in lines[2:]:
-        values = [v.strip() for v in line.split('|') if v.strip()]
-        entry = {headers[i]: values[i] for i in range(len(headers))}
-        data.append(entry)
-    return data
+    lines.pop(1)
+    table = []
+    for line in lines:
+        line = line[1:-1].split("[[")
+        if len(line) > 1 or not link_required:
+            links = []
+            for i in range(1,len(line)):
+                links.append(line[i].split("]]")[0])
+                line[i] = f"[[{len(links)-1}]]{line[i].split(']]')[1]}"
+            line = "".join(line).split("|")
+            for v,value in enumerate(line):
+                if "[[" in value:
+                    i = int(value.split("[[")[1].split("]]")[0])
+                    value = value.replace(f"[[{i}]]",f"[[{links[i]}]]")
+                line[v] = value.strip()
+            table.append(line)
+    headers = [h.lower() for h in table.pop(0)]
+    return [{category: values[v] for v,category in enumerate(headers)} for values in table]
 
 class Boolean:
     def __init__(self, s=False):
@@ -107,6 +163,9 @@ class Ingredient:
         self.name = os.path.basename(file).split(".md")[0]
         self.category = os.path.basename(os.path.dirname(file))
         if self.category == "Ingredients": self.category = None
+        self.volume = False
+        self.weight = False
+        self.other = None
         
         with open(self.file, 'r') as file:
             self.content = file.read()
@@ -115,14 +174,24 @@ class Ingredient:
         serving_sizes = table_to_dict(self.content.split("#### Serving Size:")[1].split("#### Notes")[0].strip())
         self.serving_sizes = {}
         for entry in serving_sizes:
-            if any(entry["unit"] in measurement_type for measurement_type in unit_conversions):
-                for measurement_type in unit_conversions:
-                    if entry['unit'] in measurement_type:
-                        for unit in measurement_type:
-                            self.serving_sizes[unit] = to_number(entry['number'], measurement_type[unit] / measurement_type[entry['unit']])
-                        break
+            if entry["unit"] in unit_conversions["Volume"]:
+                measurement_type = "Volume"
+                self.volume = True
+            elif entry["unit"] in unit_conversions["Weight"]:
+                measurement_type = "Weight"
+                self.weight = True
+            else: 
+                measurement_type = "Other"
+                self.other = entry["unit"]
+            if measurement_type == "Other":
+                self.serving_sizes[entry["unit"]] = to_number(entry["number"])
             else:
-                self.serving_sizes[entry['unit']] = to_number(entry['number'])
+                for unit in unit_conversions[measurement_type]:
+                    self.serving_sizes[unit] = to_number(entry["number"], unit_conversions[measurement_type][unit] / unit_conversions[measurement_type][entry["unit"]])
+        # Use weight of water to approx weight of liquids
+        if not self.weight and "ml" in self.serving_sizes:
+            self.serving_sizes["g"] = self.serving_sizes["ml"]
+            self.weight = True
         
         # Parse nutrition facts
         nutrition_facts_lines = self.content.split("---\n")[1].strip().split("\n")
@@ -138,12 +207,30 @@ class Ingredient:
             print(self.name)
             print(self.nutrition_facts)
     
-    def get_nutrition(self, quantity, unit):
-        if unit not in self.serving_sizes:
-            raise ValueError(f"Unit '{unit}' not found for ingredient '{self.name}'. Available units: {', '.join(self.serving_sizes.keys())}")
-        factor = quantity / self.serving_sizes[unit]
+    def get_nutrition(self, factor):
         nutrition = {key:to_number(self.nutrition_facts[key], factor) for key in self.nutrition_facts}
         return nutrition
+    
+    def amount(self,quantity,unit):
+        if unit not in self.serving_sizes:
+            raise ValueError(f"Unit '{unit}' not found for ingredient '{self.name}'. Available units: {', '.join(self.serving_sizes.keys())}")
+        return quantity / self.serving_sizes[unit]
+    
+    def line(self,factor,description):
+        line = f"| {description} |"
+        if self.volume: line += f" {to_imperial(self.serving_sizes['ml']*factor)} |"
+        else: line += " |"
+        if self.weight: 
+            if self.serving_sizes["g"] < 10:
+                line += f" {to_number(round(self.serving_sizes['g']*factor*2)/2)} g |"
+            elif self.serving_sizes["g"] < 100:
+                line += f" {int(round(self.serving_sizes['g']*factor))} g |"
+            else:
+                line += f" {int(round(self.serving_sizes['g']*factor,-1))} g |"        
+        else: line += " |"
+        if self.other:  line += f" {to_other(self.serving_sizes[self.other]*factor,self.other)} |"
+        else: line += " |"
+        return line
     
     def __hash__(self):
         return hash(self.nutrition_facts)
@@ -178,11 +265,30 @@ class Recipe:
         
         # Get list of ingredients
         self.ingredients = {}
-        for entry in table_to_dict(self.content.split("#### Ingredients")[1].split("####")[0].strip()):
+        ingredients_text = self.content.split("#### Ingredients")[1].split("####")[0].strip()
+        if "| Unit |" in ingredients_text:
+            def get_unit(entry):
+                return entry["unit"].strip().lower()
+            def get_quantity(entry):
+                return entry["quantity"]
+        else:
+            def get_unit(entry):
+                if len(entry["other"].strip().split()) == 2:
+                    return entry["other"].strip().split()[-1]
+                if entry["volume"]: return entry["volume"].strip().split()[-1]
+                if entry["weight"]: return "g"
+                return entry["other"].strip().split()[-1]
+            def get_quantity(entry):
+                if len(entry["other"].strip().split()) == 2:
+                    return entry["other"].strip().split(maxsplit=1)[0]
+                if entry["volume"]: return entry["volume"].strip().rsplit(maxsplit=1)[0]
+                if entry["weight"]: return entry["weight"].replace("g","").strip()
+                return entry["other"].strip().split(maxsplit=1)[0]
+        for entry in table_to_dict(ingredients_text):
             if "[[" in entry["ingredient"]: i = entry["ingredient"].split("[[")[1].split("]]")[0].split("|")[0].strip()
             else: i = entry["ingredient"].strip()
             self.ingredients[i] = (
-                to_number(entry["quantity"]), entry["unit"].strip().lower(), entry["ingredient"].strip()
+                ingredients[i].amount(to_number(get_quantity(entry)), get_unit(entry)), entry["ingredient"].strip()
             )
         
         # Sum nutrition facts
@@ -200,7 +306,7 @@ class Recipe:
         }
         for ingredient in self.ingredients:
             if ingredient in ingredients:
-                ingredient_nutrition = ingredients[ingredient].get_nutrition(self.ingredients[ingredient][0], self.ingredients[ingredient][1])
+                ingredient_nutrition = ingredients[ingredient].get_nutrition(self.ingredients[ingredient][0])
                 ingredient = ingredients[ingredient]
                 for key in nutrition_facts:
                     macro = ingredient_nutrition.get(key, None)
@@ -244,7 +350,7 @@ class Recipe:
         # Respace ingredients
         content = content.replace(
             "#### Ingredients" + self.content.split("#### Ingredients")[1].split("####")[0],
-            f"#### Ingredients\n| Quantity | Unit | Ingredient |\n| :--: | :--: | :--- |\n" + "\n".join(to_line(self.ingredients[i]) for i in self.ingredients) + "\n"
+            f"#### Ingredients\n| Ingredient | Volume | Weight | Other |\n| :-- | :--: | :--: | :--: |\n" + "\n".join(ingredients[i].line(*self.ingredients[i]) for i in self.ingredients) + "\n"
         )
         with open(self.file,"w") as fo:
             fo.write(content)

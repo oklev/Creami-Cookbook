@@ -9,25 +9,25 @@ Vegan: true
 ---
 ## Base Recipe
 #### Nutrition Facts
-| Calories (kcal) | 349 |
+| Calories (kcal) | 355 |
 | :-- | :--: |
 | Total Fat (g) | 7 |
 | Saturated Fat (g) | 2 |
 | Trans Fat (g) | 0 |
 | Cholesterol (mg) | 40 |
 | Sodium (mg) | 780 |
-| Total Carbohydrate (g) | 44.5 |
+| Total Carbohydrate (g) | 46 |
 | Dietary Fiber (g) | 1 |
-| Sugars (g) | 28 |
+| Sugars (g) | 29 |
 | Protein (g) | 29 |
 #### Ingredients
-| Quantity | Unit | Ingredient |
-| :--: | :--: | :--- |
-| 300 | ml | [[Vanilla Almond Milk]] |
-| 1 | scoop | [[Thin Mint Protein Powder]] |
-| 20 | g | [[PB2 Double Chocolate Chip Cookie Mix]] |
-| 1/8 | tsp | [[Peppermint Extract]] |
-| 15 | g | [[Sugar Free Chocolate Instant Pudding Mix]] |
+| Ingredient | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: |
+| [[Vanilla Almond Milk]] | 1 1/4 cup | 300 g | |
+| [[Thin Mint Protein Powder]] | | 32 g | 1 scoop |
+| [[PB2 Double Chocolate Chip Cookie Mix]] | 2 tbsp | 22 g | |
+| [[Peppermint Extract]] | 1/8 tsp | 0.5 g | |
+| [[Sugar Free Chocolate Instant Pudding Mix]] | 1 1/2 tbsp | 15 g |  |
 #### Instructions
 
 1. Mix together

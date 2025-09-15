@@ -21,14 +21,14 @@ Vegan: false
 | Sugars (g) | 35 |
 | Protein (g) | 18.5 |
 #### Ingredients
-| Quantity | Unit | Ingredient |
-| :--: | :--: | :--- |
-| 1 | cup | Unsweetened [[Vanilla Almond Milk]] |
-| 1/4 | cup | [[2% Cottage Cheese]] |
-| 2 | tbsp | [[PB2 Powdered Almond Butter]] |
-| 1 | tbsp | [[Splenda]] |
-| 1/4 | tsp | [[Cake Batter Extract]] |
-| 1 | tbsp | [[Rainbow Sprinkles]] |
+| Ingredient | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: |
+| Unsweetened [[Vanilla Almond Milk]] | 1 cup | 240 g | |
+| [[2% Cottage Cheese]] | 1/4 cup | 60 g | |
+| [[PB2 Powdered Almond Butter]] | 2 tbsp | 13 g | |
+| [[Splenda]] | 1 tbsp | 12 g | |
+| [[Cake Batter Extract]] | 1/4 tsp | 1 g | |
+| [[Rainbow Sprinkles]] | 1 tbsp | 12 g | |
 #### Instructions
 
 1. Mix all ingredients except sprinkles together in blender

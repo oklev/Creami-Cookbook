@@ -1,7 +1,7 @@
 ---
 Taste rating /5: 5
 Calorie range: 500-599
-Volume (ml):
+Volume (ml): 
 High Protein: false
 Gluten Free: true
 Dairy Free: false
@@ -21,15 +21,15 @@ Vegan: false
 | Sugars (g) | 57.5 |
 | Protein (g) | 19 |
 #### Ingredients
-| Quantity | Unit | Ingredient |
-| :--: | :--: | :--- |
-| 1 1/2 | cup | [[Vanilla Almond Milk]] |
-| 1/4 | cup | [[2% Cottage Cheese]] |
-| 3 | tbsp | [[Pistachio Instant Pudding Mix]] |
-| 1/4 | tsp | [[Almond Extract]] |
-| 1 | tbsp | [[Splenda]] |
-| 2 | tbsp | [[PB2 Powdered Almond Butter]] |
-| 1/4 | cup | [[Chopped almonds]] |
+| Ingredient | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: |
+| [[Vanilla Almond Milk]] | 1 1/2 cup | 350 g | |
+| [[2% Cottage Cheese]] | 1/4 cup | 60 g | |
+| [[Pistachio Instant Pudding Mix]] | 3 tbsp | 30 g |  |
+| [[Almond Extract]] | 1/4 tsp | 1 g | |
+| [[Splenda]] | 1 tbsp | 12 g | |
+| [[PB2 Powdered Almond Butter]] | 2 tbsp | 13 g | |
+| [[Chopped almonds]] | 1/4 cup | 30 g | |
 #### Instructions
 
 1. Whisk ingredients together

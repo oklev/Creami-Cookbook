@@ -9,24 +9,24 @@ Vegan: false
 ---
 ## Base Recipe
 #### Nutrition Facts
-| Calories (kcal) | 314 |
+| Calories (kcal) | 312 |
 | :-- | :--: |
-| Total Fat (g) | 5 |
+| Total Fat (g) | 4.5 |
 | Saturated Fat (g) | 0.5 |
 | Trans Fat (g) | 0 |
 | Cholesterol (mg) | 0 |
-| Sodium (mg) | 707 |
-| Total Carbohydrate (g) | 39.5 |
+| Sodium (mg) | 696 |
+| Total Carbohydrate (g) | 39 |
 | Dietary Fiber (g) | 1.5 |
 | Sugars (g) | 29 |
 | Protein (g) | 29 |
 #### Ingredients
-| Quantity | Unit | Ingredient |
-| :--: | :--: | :--- |
-| 300 | ml | [[Vanilla Almond Milk]] |
-| 15 | g | [[Butterscotch Instant Pudding Mix]] |
-| 12 | g | [[PBfit chocolate]] |
-| 1 | scoop | [[Chocolate Protein Powder]] |
+| Ingredient | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: |
+| [[Vanilla Almond Milk]] | 1 1/4 cup | 300 g | |
+| [[Butterscotch Instant Pudding Mix]] | 1 1/2 tbsp | 15 g |  |
+| [[PBfit chocolate]] | 1 1/2 tbsp | 12 g | |
+| [[Chocolate Protein Powder]] | | 30 g | 1 scoop |
 #### Instructions
 
 1. Whisk together

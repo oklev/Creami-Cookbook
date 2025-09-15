@@ -20,9 +20,9 @@ Vegan: false
 | Sugars (g) | 36 |
 | Protein (g) | 12 |
 #### Ingredients
-| Quantity | Unit | Ingredient |
-| :--: | :--: | :--- |
-| 3 | container | [[Activia Black Cherry Yogurt]] |
+| Ingredient | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: |
+| [[Activia Black Cherry Yogurt]] | | 340 g | 3 container |
 #### Instructions
 
 1. Straight up cherry yogurt
