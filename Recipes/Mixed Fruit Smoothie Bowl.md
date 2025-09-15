@@ -21,13 +21,13 @@ Vegan: false
 | Sugars (g) | 25.5 |
 | Protein (g) | 7.5 |
 #### Ingredients
-| Ingredient | Volume | Weight | Other |
-| :-- | :--: | :--: | :--: |
-| [[Greek Yogurt]] | 1/4 cup | 60 g | |
-| [[2% Milk]] | 1/4 cup | 60 g | |
-| [[Stevia]] | 1/4 tsp | 230 g | 1 squeeze |
-| [[Vanilla Bean Paste]] | 1/4 tsp | 1 g | |
-| [[Frozen Mixed Berries]], without strawberries | 2 cup | 280 g | |
+| Ingredient | Calories | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: | :--: |
+| [[Greek Yogurt]] | 30 | 1/4 cup | 60 g | |
+| [[2% Milk]] | 32 | 1/4 cup | 60 g | |
+| [[Stevia]] | 0 | 1/4 tsp | 230 g | 1 squeeze |
+| [[Vanilla Bean Paste]] | 4 | 1/4 tsp | 1 g | |
+| [[Frozen Mixed Berries]], without strawberries | 140 | 2 cup | 280 g | |
 #### Instructions
 
 1. Add all ingredients to a ninja blender single serve container

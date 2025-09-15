@@ -20,10 +20,10 @@ Vegan: false
 | Sugars (g) | 38 |
 | Protein (g) | 22.5 |
 #### Ingredients
-| Ingredient | Volume | Weight | Other |
-| :-- | :--: | :--: | :--: |
-| [[Activia Blueberry Yogurt]] | | 450 g | 4 container |
-| [[2% Cottage Cheese]] | 1/4 cup | 60 g | |
+| Ingredient | Calories | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: | :--: |
+| [[Activia Blueberry Yogurt]] | 320 | | 450 g | 4 container |
+| [[2% Cottage Cheese]] | 50 | 1/4 cup | 60 g | |
 #### Instructions
 
 1. Mix together

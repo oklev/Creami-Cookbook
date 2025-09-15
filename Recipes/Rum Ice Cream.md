@@ -21,14 +21,14 @@ Vegan: false
 | Sugars (g) | 27 |
 | Protein (g) | 8.5 |
 #### Ingredients
-| Ingredient | Volume | Weight | Other |
-| :-- | :--: | :--: | :--: |
-| [[Vanilla Almond Milk]] | 1 1/4 cup | 300 g | |
-| [[Butterscotch Instant Pudding Mix]] | 1 tbsp | 10 g |  |
-| [[Sugar Free Vanilla Instant Pudding Mix]] | 1 tbsp | 10.5 g |  |
-| [[PB2 Powdered Almond Butter]] | 3 tbsp | 20 g | |
-| [[Rum Extract]] | 1/4 tsp | 1 g | |
-| [[Dark Rum]] | 2 tbsp | 30 g | |
+| Ingredient | Calories | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: | :--: |
+| [[Vanilla Almond Milk]] | 99 | 1 1/4 cup | 300 g | |
+| [[Butterscotch Instant Pudding Mix]] | 34 | 1 tbsp | 10 g |  |
+| [[Sugar Free Vanilla Instant Pudding Mix]] | 30 | 1 tbsp | 10.5 g |  |
+| [[PB2 Powdered Almond Butter]] | 75 | 3 tbsp | 20 g | |
+| [[Rum Extract]] | 4 | 1/4 tsp | 1 g | |
+| [[Dark Rum]] | 72 | 2 tbsp | 30 g | |
 #### Instructions
 
 1. Mix together everything aside from rum

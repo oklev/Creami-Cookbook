@@ -216,8 +216,10 @@ class Ingredient:
             raise ValueError(f"Unit '{unit}' not found for ingredient '{self.name}'. Available units: {', '.join(self.serving_sizes.keys())}")
         return quantity / self.serving_sizes[unit]
     
-    def line(self,factor,description):
+    def line(self,factor,description, calories=False):
         line = f"| {description} |"
+        if calories:
+            line += f" {int(round(self.nutrition_facts['Calories (kcal)']*factor))} |"
         if self.volume: line += f" {to_imperial(self.serving_sizes['ml']*factor)} |"
         else: line += " |"
         if self.weight: 
@@ -350,7 +352,8 @@ class Recipe:
         # Respace ingredients
         content = content.replace(
             "#### Ingredients" + self.content.split("#### Ingredients")[1].split("####")[0],
-            f"#### Ingredients\n| Ingredient | Volume | Weight | Other |\n| :-- | :--: | :--: | :--: |\n" + "\n".join(ingredients[i].line(*self.ingredients[i]) for i in self.ingredients) + "\n"
+            f"#### Ingredients\n| Ingredient | Calories | Volume | Weight | Other |\n| :-- | :--: | :--: | :--: | :--: |\n" + 
+                "\n".join(ingredients[i].line(*self.ingredients[i],calories=True) for i in self.ingredients) + "\n"
         )
         with open(self.file,"w") as fo:
             fo.write(content)

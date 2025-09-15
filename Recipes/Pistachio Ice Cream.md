@@ -21,15 +21,15 @@ Vegan: false
 | Sugars (g) | 57.5 |
 | Protein (g) | 19 |
 #### Ingredients
-| Ingredient | Volume | Weight | Other |
-| :-- | :--: | :--: | :--: |
-| [[Vanilla Almond Milk]] | 1 1/2 cup | 350 g | |
-| [[2% Cottage Cheese]] | 1/4 cup | 60 g | |
-| [[Pistachio Instant Pudding Mix]] | 3 tbsp | 30 g |  |
-| [[Almond Extract]] | 1/4 tsp | 1 g | |
-| [[Splenda]] | 1 tbsp | 12 g | |
-| [[PB2 Powdered Almond Butter]] | 2 tbsp | 13 g | |
-| [[Chopped almonds]] | 1/4 cup | 30 g | |
+| Ingredient | Calories | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: | :--: |
+| [[Vanilla Almond Milk]] | 118 | 1 1/2 cup | 350 g | |
+| [[2% Cottage Cheese]] | 50 | 1/4 cup | 60 g | |
+| [[Pistachio Instant Pudding Mix]] | 112 | 3 tbsp | 30 g |  |
+| [[Almond Extract]] | 4 | 1/4 tsp | 1 g | |
+| [[Splenda]] | 45 | 1 tbsp | 12 g | |
+| [[PB2 Powdered Almond Butter]] | 50 | 2 tbsp | 13 g | |
+| [[Chopped almonds]] | 170 | 1/4 cup | 30 g | |
 #### Instructions
 
 1. Whisk ingredients together

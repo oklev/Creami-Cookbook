@@ -21,12 +21,12 @@ Vegan: false
 | Sugars (g) | 30.5 |
 | Protein (g) | 32.5 |
 #### Ingredients
-| Ingredient | Volume | Weight | Other |
-| :-- | :--: | :--: | :--: |
-| [[Greek Yogurt]] | 1 1/2 cup | 340 g | |
-| [[Splenda]] | 1 tbsp | 12 g | |
-| [[Vanilla Bean Paste]] | 1/2 tsp | 2.5 g | |
-| [[Fresh Blueberries]] | 1/2 cup | 70 g | |
+| Ingredient | Calories | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: | :--: |
+| [[Greek Yogurt]] | 180 | 1 1/2 cup | 340 g | |
+| [[Splenda]] | 45 | 1 tbsp | 12 g | |
+| [[Vanilla Bean Paste]] | 8 | 1/2 tsp | 2.5 g | |
+| [[Fresh Blueberries]] | 35 | 1/2 cup | 70 g | |
 #### Instructions
 
 1. Mix yogurt with splenda + blueberries

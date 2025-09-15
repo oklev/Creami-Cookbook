@@ -21,11 +21,11 @@ Vegan: true
 | Sugars (g) | 38.5 |
 | Protein (g) | 14.5 |
 #### Ingredients
-| Ingredient | Volume | Weight | Other |
-| :-- | :--: | :--: | :--: |
-| [[Vanilla Almond Milk]] | 1 1/4 cup | 300 g | |
-| [[Butterscotch Instant Pudding Mix]] | 1 1/2 tbsp | 15 g |  |
-| [[PBfit chocolate]] | 1/3 cup | 43 g | |
+| Ingredient | Calories | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: | :--: |
+| [[Vanilla Almond Milk]] | 99 | 1 1/4 cup | 300 g | |
+| [[Butterscotch Instant Pudding Mix]] | 51 | 1 1/2 tbsp | 15 g |  |
+| [[PBfit chocolate]] | 187 | 1/3 cup | 43 g | |
 #### Instructions
 
 1. Whisk together in pint

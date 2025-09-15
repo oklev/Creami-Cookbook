@@ -21,13 +21,13 @@ Vegan: false
 | Sugars (g) | 40.5 |
 | Protein (g) | 9.5 |
 #### Ingredients
-| Ingredient | Volume | Weight | Other |
-| :-- | :--: | :--: | :--: |
-| [[Frozen Peach Slices]] | 3/4 cup | 140 g | 10 piece |
-| [[Activia Peach Yogurt]] | | 230 g | 2 container |
-| Unsweetened [[Vanilla Almond Milk]] | 1/2 cup | 120 g | |
-| [[Vanilla Extract]] | 1/2 tsp | 2.5 g | |
-| [[Splenda]] | 1 tsp | 4 g | |
+| Ingredient | Calories | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: | :--: |
+| [[Frozen Peach Slices]] | 60 | 3/4 cup | 140 g | 10 piece |
+| [[Activia Peach Yogurt]] | 160 | | 230 g | 2 container |
+| Unsweetened [[Vanilla Almond Milk]] | 39 | 1/2 cup | 120 g | |
+| [[Vanilla Extract]] | 7 | 1/2 tsp | 2.5 g | |
+| [[Splenda]] | 15 | 1 tsp | 4 g | |
 #### Instructions
 
 1. Add all ingredients to a ninja blender single serve container
