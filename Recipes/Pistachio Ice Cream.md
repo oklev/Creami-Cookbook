@@ -1,7 +1,7 @@
 ---
-Taste rating /5: 4
+Taste rating /5: 5
 Calorie range: 500-599
-Volume (ml): 
+Volume (ml):
 High Protein: false
 Gluten Free: true
 Dairy Free: false
@@ -51,3 +51,5 @@ Xantham gum: I think it needs a bit more, maybe try 1/2 tsp?
 It was also a little low on pistachio flavor so might go back to 3 tbsp pudding when adding cottage cheese (or maybe next time use them to replace some of the milk??)
 
 I ended up not putting in the vanilla creamer. Was an improvement but it's still missing something. A little body maybe? Maybe needs a source of protein like the other recipes to bind everything together? Trying +2 tbsp PB2 almond butter powder.
+
+This did the trick in terms of flavor / texture! But I'd like to lower the calories some if possible.
