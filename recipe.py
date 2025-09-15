@@ -287,7 +287,7 @@ class Recipe:
                 if entry["weight"]: return entry["weight"].replace("g","").strip()
                 return entry["other"].strip().split(maxsplit=1)[0]
         for entry in table_to_dict(ingredients_text):
-            if "[[" in entry["ingredient"]: i = entry["ingredient"].split("[[")[1].split("]]")[0].split("|")[0].strip()
+            if "[[" in entry["ingredient"]: i = entry["ingredient"].split("[[")[1].split("]]")[0].split("\\")[0].strip()
             else: i = entry["ingredient"].strip()
             self.ingredients[i] = (
                 ingredients[i].amount(to_number(get_quantity(entry)), get_unit(entry)), entry["ingredient"].strip()
