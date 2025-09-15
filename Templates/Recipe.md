@@ -1,10 +1,11 @@
 ---
 Taste rating /5:
 Calorie range:
+Volume (ml):
 High Protein: false
-Gluten Free: false
-Dairy Free: false
-Vegan: false
+Gluten Free: true
+Dairy Free: true
+Vegan: true
 ---
 #### Nutrition Facts
 #### Ingredients

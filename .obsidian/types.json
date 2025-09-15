@@ -21,6 +21,8 @@
     "High Protein": "checkbox",
     "Gluten Free": "checkbox",
     "Dairy Free": "checkbox",
-    "Vegan": "checkbox"
+    "Vegan": "checkbox",
+    "Volume": "number",
+    "Taste rating /5": "number"
   }
 }

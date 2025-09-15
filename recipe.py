@@ -1,14 +1,22 @@
 import sys
 import os
 from glob import glob
+import json
 repo_dir = os.path.dirname(__file__)
 ingredient_dir = os.path.join(repo_dir, "Ingredients")
 verbose = "-v" in sys.argv
 unit_conversions = [
-    {"cup":1,"ml":236.588,"tbsp":16,"tsp":48,"oz":8,"l":0.236588,"pt":0.5,"qt":0.25,"gal":0.0625},
-    {"g":1,"kg":0.001,"oz":0.035274,"lb":0.0022046249999752}
+    {"cup":1,"ml":236.588,"tbsp":16,"tsp":48,"fl oz":8,"l":0.236588,"pt":0.5,"qt":0.25,"gal":0.0625,"cups":1,"c":1,"T":16,"t":48,"gallon":0.0625,"pint":0.5,"quart":0.25,"fl oz":8,"fluid ounce":8},
+    {"g":1,"oz":0.035274,"gram":1,"grams":1}
 ]
 ingredients = {}
+properties = {}
+property_types = {}
+dietary_restrictions = (
+    "Gluten Free",
+    "Dairy Free",
+    "Vegan"
+)
 
 def to_number(s, multiplier=1):
     if s is None: return None
@@ -29,22 +37,24 @@ def to_number(s, multiplier=1):
         return int(num)
     return num
 
+def to_str(s):
+    if s is None: return ""
+    if int(s) == s: return str(int(s))
+    whole = int(s)
+    frac = s - whole
+    conversion = {
+        0:"", 1:"1",
+        0.25:"1/4", 0.5:"1/2", 0.75:"3/4",
+        0.3333:"1/3", 0.6667:"2/3",
+        0.125:"1/8", 0.375:"3/8", 0.625:"5/8", 0.875:"7/8"
+    }
+    dist = {abs(frac - f):f for f in conversion}
+    closest = conversion[dist[min(dist)]]
+    if closest == "1": return str(whole + 1)
+    elif whole == 0 and closest: return closest
+    else: return f"{whole} {closest}".strip()
+
 def to_line(line):
-    def to_str(s):
-        if int(s) == s: return str(int(s))
-        whole = int(s)
-        frac = s - whole
-        conversion = {
-            0:"", 1:"1",
-            0.25:"1/4", 0.5:"1/2", 0.75:"3/4",
-            0.3333:"1/3", 0.6667:"2/3",
-            0.125:"1/8", 0.375:"3/8", 0.625:"5/8", 0.875:"7/8"
-        }
-        dist = {abs(frac - f):f for f in conversion}
-        closest = conversion[dist[min(dist)]]
-        if closest == "1": return str(whole + 1)
-        elif whole == 0 and closest: return closest
-        else: return f"{whole} {closest}".strip()
     number, unit, ingredient = line
     if unit in ("cup","tbsp","tsp"): number = to_str(number)
     else: number = round(number,0)
@@ -60,6 +70,36 @@ def table_to_dict(table_str):
         data.append(entry)
     return data
 
+class Boolean:
+    def __init__(self, s=False):
+        if type(s) is str: 
+            if s.lower() == "true": self.value = True
+            else: self.value = False
+        else: self.value = bool(s)
+    def __str__(self):
+        return "true" if self.value else "false"
+    def __repr__(self):
+        return str(self)
+    def __bool__(self):
+        return self.value
+    def _set(self, b):
+        self.value = bool(b)
+    def _or(self, b):
+        self.value = self.value or bool(b)
+    def _and(self, b):
+        self.value = self.value and bool(b)
+
+class Number:
+    def __init__(self, s):
+        self.value = to_number(s)
+    def __str__(self):
+        return to_str(self.value)
+    def __repr__(self):
+        return str(self)
+    def __float__(self):
+        return self.value
+    def __int__(self):
+        return int(self.value)
 
 class Ingredient:
     def __init__(self,file):
@@ -92,7 +132,7 @@ class Ingredient:
             if "(" in line:
                 self.nutrition_facts[line.split(":")[0]] = to_number(line.split(":")[1])
             else:
-                self.dietary_restrictions[line.split(":")[0]] = line.split(":")[1].strip()
+                self.dietary_restrictions[line.split(":")[0]] = Boolean(line.split(":")[1].strip())
         
         if verbose:
             print(self.name)
@@ -114,9 +154,27 @@ class Recipe:
     def __init__(self, name):
         self.name = name
         self.file = os.path.join(os.path.join(repo_dir,"Recipes"), f"{self.name}.md")
+        self.properties = {key:property_types[key](properties[key]) for key in properties}
         
         with open(self.file, 'r') as file:
-            self.content = file.read()
+            content = file.read()
+            for line in content.split("---\n")[1].strip().split("\n"):
+                if ":" in line:
+                    key = line.split(":")[0].strip()
+                    if key in dietary_restrictions: self.properties[key] = Boolean(True)
+                    else:
+                        value = line.split(":",1)[1].strip()
+                        self.properties[key] = property_types[key](value)
+            if "## Base Recipe" in content:
+                self.content = content.rsplit("## Base Recipe",1)[1].strip()
+                if "\n## " in self.content:
+                    self.content = self.content.split("\n## ")[0].strip()
+            else:
+                self.content = content.split("---\n",2)[2].strip()
+        if "Volume" in properties:
+            self.volume = to_number(properties.split("Volume:")[1].split("\n")[0].strip())
+        else:
+            self.volume = None
         
         # Get list of ingredients
         self.ingredients = {}
@@ -140,11 +198,6 @@ class Recipe:
             "Sugars (g)":               None,
             "Protein (g)":              None
         }
-        self.dietary_restrictions = {
-            "Gluten Free": True,
-            "Dairy Free": True,
-            "Vegan": True
-        }
         for ingredient in self.ingredients:
             if ingredient in ingredients:
                 ingredient_nutrition = ingredients[ingredient].get_nutrition(self.ingredients[ingredient][0], self.ingredients[ingredient][1])
@@ -154,9 +207,8 @@ class Recipe:
                     if nutrition_facts[key] is None:
                         nutrition_facts[key] = macro
                     elif macro is not None: nutrition_facts[key] += macro
-                for key in self.dietary_restrictions:
-                    if ingredient.dietary_restrictions.get(key, "false") == "false": 
-                        self.dietary_restrictions[key] = False
+                for key in dietary_restrictions:
+                    self.properties[key]._and(Boolean(ingredient.dietary_restrictions.get(key, False)))
         
         self.nutrition_facts ={}
         for key in nutrition_facts:
@@ -167,33 +219,21 @@ class Recipe:
                 else:
                     # Round to nearest mg or kcal
                     self.nutrition_facts[key] = int(round(nutrition_facts[key]))
-        self.high_protein = False
+        self.properties["High Protein"] = Boolean()
         try:
-            if self.nutrition_facts["Calories (kcal)"] < 10*self.nutrition_facts["Protein (g)"]: self.high_protein = True
+            if self.nutrition_facts["Calories (kcal)"] < 10*self.nutrition_facts["Protein (g)"]: self.properties["High Protein"]._set(True)
         except TypeError: pass
         
-    def write(self):
-        content = self.content
-        
-        # Update diet tags
-        tags = {
-            "Calorie range":None,
-            "High Protein": f"{self.high_protein                                    }".lower(),
-            "Gluten Free":  f"{self.dietary_restrictions.get('Gluten Free', 'false')}".lower(),
-            "Dairy Free":   f"{self.dietary_restrictions.get('Dairy Free',  'false')}".lower(),
-            "Vegan":        f"{self.dietary_restrictions.get('Vegan',       'false')}".lower()
-        }
         if self.nutrition_facts["Calories (kcal)"] < 200:
-            tags["Calorie range"] = "<200"
+            self.properties["Calorie range"] = "<200"
         elif self.nutrition_facts["Calories (kcal)"] >= 600: 
-            tags["Calorie range"] = "600+"
+            self.properties["Calorie range"] = "600+"
         else:
-            tags["Calorie range"] = f"{(self.nutrition_facts['Calories (kcal)']//100)*100}-{(self.nutrition_facts['Calories (kcal)']//100)*100+99}"
-        for tag in tags:
-            content = content.replace(
-                f"{tag}:" + content.split(f"{tag}:")[1].split("\n")[0],
-                f"{tag}: {tags[tag]}"
-            )
+            self.properties["Calorie range"] = f"{(self.nutrition_facts['Calories (kcal)']//100)*100}-{(self.nutrition_facts['Calories (kcal)']//100)*100+99}"
+        
+    def write(self):
+        content = "---\n" + "\n".join(f"{key}: {self.properties[key]}" for key in self.properties) + f"\n---\n## Base Recipe\n{self.content}"
+        
         # Update nutrition facts
         nutrition_facts = [f"| {key} | {self.nutrition_facts[key]} |" for key in self.nutrition_facts]
         nutrition_facts.insert(1, "| :-- | :--: |")
@@ -213,6 +253,25 @@ if __name__ == "__main__":
     for ingredient in glob(os.path.join(ingredient_dir, "**", "*.md")):
         ingredient = Ingredient(ingredient)
         ingredients[ingredient.name] = ingredient
+    with open(os.path.join(repo_dir, "Templates","Recipe.md")) as file:
+        content = file.read()
+        for line in content.split("---")[1].strip().split("\n"):
+            if ":" in line:
+                key = line.split(":")[0].strip()
+                value = line.split(":",1)[1].strip()
+                properties[key] = value
+    with open(os.path.join(repo_dir, ".obsidian","types.json")) as file:
+        json_properties = json.load(file)["types"]
+        for prop in properties:
+            if prop in json_properties:
+                if json_properties[prop] == "number":
+                    property_types[prop] = Number
+                elif json_properties[prop] == "checkbox":
+                    property_types[prop] = Boolean
+                else: property_types[prop] = str
+            else:
+                property_types[prop] = str
+    
     for recipe in glob(os.path.join(repo_dir, "Recipes", "*.md")):
         recipe_name = os.path.basename(recipe).split(".md")[0]    
         Recipe(recipe_name).write()
