@@ -216,23 +216,33 @@ class Ingredient:
             raise ValueError(f"Unit '{unit}' not found for ingredient '{self.name}'. Available units: {', '.join(self.serving_sizes.keys())}")
         return quantity / self.serving_sizes[unit]
     
-    def line(self,factor,description, calories=False):
-        line = f"| {description} |"
-        if calories:
-            line += f" {int(round(self.nutrition_facts['Calories (kcal)']*factor))} |"
-        if self.volume: line += f" {to_imperial(self.serving_sizes['ml']*factor)} |"
-        else: line += " |"
-        if self.weight: 
-            if self.serving_sizes["g"] < 10:
-                line += f" {to_number(round(self.serving_sizes['g']*factor*2)/2)} g |"
-            elif self.serving_sizes["g"] < 100:
-                line += f" {int(round(self.serving_sizes['g']*factor))} g |"
-            else:
-                line += f" {int(round(self.serving_sizes['g']*factor,-1))} g |"        
-        else: line += " |"
-        if self.other:  line += f" {to_other(self.serving_sizes[self.other]*factor,self.other)} |"
-        else: line += " |"
+    def line(self, header, factor, description=None):
+        if description is None: description = f"[[{self.name}]]"
+        line = "|"
+        for column in header:
+            match column:
+                case "Ingredient": line += f" {description} |"
+                case "Calories": line += f" {int(round(self.nutrition_facts['Calories (kcal)']*factor))} |"
+                case "Volume":
+                    if self.volume: line += f" {to_imperial(self.serving_sizes['ml']*factor)} |"
+                    else: line += " |"
+                case "Weight":
+                    if self.weight: 
+                        if self.serving_sizes["g"] < 10:
+                            line += f" {to_number(round(self.serving_sizes['g']*factor*2)/2)} g |"
+                        elif self.serving_sizes["g"] < 100:
+                            line += f" {int(round(self.serving_sizes['g']*factor))} g |"
+                        else:
+                            line += f" {int(round(self.serving_sizes['g']*factor,-1))} g |"        
+                    else: line += " |"
+                case "Other":
+                    if self.other:  line += f" {to_other(self.serving_sizes[self.other]*factor,self.other)} |"
+                    else: line += " |"
         return line
+    
+    def gives_other(self,factor):
+        if not self.other: return False
+        return bool(to_other(self.serving_sizes[self.other]*factor,self.other))
     
     def __hash__(self):
         return hash(self.nutrition_facts)
@@ -275,13 +285,13 @@ class Recipe:
                 return entry["quantity"]
         else:
             def get_unit(entry):
-                if len(entry["other"].strip().split()) == 2:
+                if "other" in entry and len(entry["other"].strip().split()) == 2:
                     return entry["other"].strip().split()[-1]
                 if entry["volume"]: return entry["volume"].strip().split()[-1]
                 if entry["weight"]: return "g"
                 return entry["other"].strip().split()[-1]
             def get_quantity(entry):
-                if len(entry["other"].strip().split()) == 2:
+                if "other" in entry and len(entry["other"].strip().split()) == 2:
                     return entry["other"].strip().split(maxsplit=1)[0]
                 if entry["volume"]: return entry["volume"].strip().rsplit(maxsplit=1)[0]
                 if entry["weight"]: return entry["weight"].replace("g","").strip()
@@ -352,11 +362,23 @@ class Recipe:
         # Respace ingredients
         content = content.replace(
             "#### Ingredients" + self.content.split("#### Ingredients")[1].split("####")[0],
-            f"#### Ingredients\n| Ingredient | Calories | Volume | Weight | Other |\n| :-- | :--: | :--: | :--: | :--: |\n" + 
-                "\n".join(ingredients[i].line(*self.ingredients[i],calories=True) for i in self.ingredients) + "\n"
+            f"#### Ingredients\n{self.ingredient_table()}\n"
         )
         with open(self.file,"w") as fo:
             fo.write(content)
+    
+    def ingredient_table(self,header=None):
+        if header is None:
+            header = ["Ingredient","Calories","Volume","Weight","Other"]
+        if "Other" in header and not any(ingredients[i].gives_other(self.ingredients[i][0]) for i in self.ingredients):
+            header.remove("Other")
+        table = f"| {' | '.join(header)} |"
+        spaces = [":--:" for _ in header]
+        spaces[header.index("Ingredient")] = ":--"
+        table += f"\n| {' | '.join(spaces)} |"
+        for i in self.ingredients:
+            table += "\n" + ingredients[i].line(header,*self.ingredients[i])
+        return table
 
 if __name__ == "__main__":
     for ingredient in glob(os.path.join(ingredient_dir, "**", "*.md")):
