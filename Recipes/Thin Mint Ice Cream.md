@@ -1,7 +1,7 @@
 ---
 Taste rating /5: 5
 Calorie range: 300-399
-Volume (ml): 
+Volume (ml): "355"
 High Protein: false
 Gluten Free: true
 Dairy Free: true
