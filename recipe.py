@@ -278,24 +278,20 @@ class Recipe:
         # Get list of ingredients
         self.ingredients = {}
         ingredients_text = self.content.split("#### Ingredients")[1].split("####")[0].strip()
-        if "| Unit |" in ingredients_text:
-            def get_unit(entry):
-                return entry["unit"].strip().lower()
-            def get_quantity(entry):
-                return entry["quantity"]
-        else:
-            def get_unit(entry):
-                if "other" in entry and len(entry["other"].strip().split()) == 2:
-                    return entry["other"].strip().split()[-1]
-                if entry["volume"]: return entry["volume"].strip().split()[-1]
-                if entry["weight"]: return "g"
+        def get_unit(entry):
+            if "unit" in entry: return entry["unit"].strip().lower()
+            if "other" in entry and len(entry["other"].strip().split()) == 2:
                 return entry["other"].strip().split()[-1]
-            def get_quantity(entry):
-                if "other" in entry and len(entry["other"].strip().split()) == 2:
-                    return entry["other"].strip().split(maxsplit=1)[0]
-                if entry["volume"]: return entry["volume"].strip().rsplit(maxsplit=1)[0]
-                if entry["weight"]: return entry["weight"].replace("g","").strip()
+            if entry["volume"]: return entry["volume"].strip().split()[-1]
+            if entry["weight"]: return "g"
+            return entry["other"].strip().split()[-1]
+        def get_quantity(entry):
+            if "quantity" in entry: return entry["quantity"]
+            if "other" in entry and len(entry["other"].strip().split()) == 2:
                 return entry["other"].strip().split(maxsplit=1)[0]
+            if entry["volume"]: return entry["volume"].strip().rsplit(maxsplit=1)[0]
+            if entry["weight"]: return entry["weight"].replace("g","").strip()
+            return entry["other"].strip().split(maxsplit=1)[0]
         for entry in table_to_dict(ingredients_text):
             if "[[" in entry["ingredient"]: i = entry["ingredient"].split("[[")[1].split("]]")[0].split("\\")[0].strip()
             else: i = entry["ingredient"].strip()
