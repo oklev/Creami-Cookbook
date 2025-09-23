@@ -1,7 +1,7 @@
 ---
 Taste rating /5: 1
 Calorie range: 200-299
-Volume (ml):
+Volume (ml): "355"
 High Protein: true
 Gluten Free: true
 Dairy Free: true
@@ -21,13 +21,15 @@ Vegan: true
 | Sugars (g) | 19 |
 | Protein (g) | 29 |
 #### Ingredients
-| Ingredient | Calories | Volume | Weight | Other |
-| :-- | :--: | :--: | :--: | :--: |
-| [[Vanilla Almond Milk]] | 100 | 1 1/4 cup | 300 g | |
-| [[PB2 Powdered Almond Butter]] | 38 | 1 1/2 tbsp | 10 g | |
-| [[Vanilla Ice Cream Protein Powder]] | 120 | | 31 g | 1 scoop |
-| [[Matcha Powder]] | 22 | 1 1/2 tbsp | 9 g | |
-| [[Xantham Gum]] | 5 | 1/2 tsp | 1.5 g | |
+| Ingredient                           | Calories |   Volume   | Weight |  Other  |
+| :----------------------------------- | :------: | :--------: | :----: | :-----: |
+| [[Vanilla Almond Milk]]              |   100    | 1 1/4 cup  | 300 g  |         |
+| [[PB2 Powdered Almond Butter]]       |    38    | 1 1/2 tbsp |  10 g  |         |
+| [[Vanilla Ice Cream Protein Powder]] |   120    |            |  31 g  | 1 scoop |
+| [[Matcha Powder]]                    |    22    |   1 tsp    |  9 g   |         |
+| [[Xantham Gum]]                      |    5     |  1/2 tsp   | 1.5 g  |         |
+| [[Splenda]]                          |          |   1 tbsp   |        |         |
+| [[Vanilla Bean Paste]]               |          |   1 tsp    |        |         |
 #### Instructions
 
 1. Mix; add water to 500ml
@@ -37,4 +39,4 @@ Vegan: true
 
 #### Comments
 
-Nasty. Too much matcha
+the flavor is good but it has the texture of mousse 💀
