@@ -9,17 +9,17 @@ Vegan: true
 ---
 ## Base Recipe
 #### Nutrition Facts
-| Calories (kcal)        | 355 |
-| :--------------------- | :-: |
-| Total Fat (g)          |  7  |
-| Saturated Fat (g)      |  2  |
-| Trans Fat (g)          |  0  |
-| Cholesterol (mg)       | 40  |
-| Sodium (mg)            | 780 |
-| Total Carbohydrate (g) | 46  |
-| Dietary Fiber (g)      |  1  |
-| Sugars (g)             | 29  |
-| Protein (g)            | 29  |
+| Calories (kcal) | 355 |
+| :-- | :--: |
+| Total Fat (g) | 7 |
+| Saturated Fat (g) | 2 |
+| Trans Fat (g) | 0 |
+| Cholesterol (mg) | 40 |
+| Sodium (mg) | 780 |
+| Total Carbohydrate (g) | 46 |
+| Dietary Fiber (g) | 1 |
+| Sugars (g) | 29 |
+| Protein (g) | 29 |
 #### Ingredients
 | Ingredient | Calories | Volume | Weight | Other |
 | :-- | :--: | :--: | :--: | :--: |
