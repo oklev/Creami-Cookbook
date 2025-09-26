@@ -1,7 +1,7 @@
 ---
-Taste rating /5: 
+Taste rating /5:
 Calorie range: 300-399
-Volume (ml): 
+Volume (ml): "340"
 High Protein: false
 Gluten Free: true
 Dairy Free: true
@@ -21,11 +21,12 @@ Vegan: true
 | Sugars (g) | 38.5 |
 | Protein (g) | 14.5 |
 #### Ingredients
-| Ingredient | Calories | Volume | Weight |
-| :-- | :--: | :--: | :--: |
-| [[Vanilla Almond Milk]] | 99 | 1 1/4 cup | 300 g |
-| [[Butterscotch Instant Pudding Mix]] | 51 | 1 1/2 tbsp | 15 g |
-| [[PBfit chocolate]] | 187 | 1/3 cup | 43 g |
+| Ingredient                           | Calories |   Volume   | Weight |
+| :----------------------------------- | :------: | :--------: | :----: |
+| [[Vanilla Almond Milk]]              |    99    | 1 1/4 cup  | 300 g  |
+| [[Butterscotch Instant Pudding Mix]] |    51    | 1 1/2 tbsp |  15 g  |
+| [[PBfit chocolate]]                  |   187    |  1/3 cup   |  43 g  |
+| Xantham gum or cottage cheese        |          |            |        |
 #### Instructions
 
 1. Whisk together in pint
