@@ -14,12 +14,13 @@ Vegan: true
 | :------: | :---- | ------------------------------------------ |
 |   300    | ml    | [[Vanilla Almond Milk]]                    |
 |    1     | scoop | [[Vanilla Ice Cream Protein Powder]]       |
-|    2     | tbsp  | [[Apple Pie filling]]                      |
+|    3     | tbsp  | [[Apple Pie filling]]                      |
 |    1     | tbsp  | [[PB2 Powdered Almond Butter]]             |
 |   1/4    | tsp   | [[Butter Extract]]                         |
 |    1     | tsp   | [[Butterscotch Instant Pudding Mix]]       |
 |   1.5    | tbsp  | [[Sugar Free Vanilla Instant Pudding Mix]] |
-|   1/2    | tsp   | [[Xantham Gum]]                            |
+|   1/4    | tsp   | [[Xantham Gum]]                            |
+|   1/4    | tsp   | Cinnamon                                   |
 
 #### Instructions
 
