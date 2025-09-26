@@ -37,3 +37,45 @@ Vegan: false
 #### Comments
 
 Per request
+
+## Regular Pints
+#### Nutrition Facts
+| Calories (kcal) | 509 |
+| :-- | :--: |
+| Total Fat (g) | 10.5 |
+| Saturated Fat (g) | 1 |
+| Trans Fat (g) | 0 |
+| Cholesterol (mg) | 7 |
+| Sodium (mg) | 1191 |
+| Total Carbohydrate (g) | 72.5 |
+| Dietary Fiber (g) | 7.5 |
+| Sugars (g) | 51.5 |
+| Protein (g) | 29 |
+#### Ingredients
+| Ingredient | Calories | Volume | Weight |
+| :-- | :--: | :--: | :--: |
+| [[Vanilla Almond Milk]] | 110 | 1 1/3 cup | 330 g |
+| [[Butterscotch Instant Pudding Mix]] | 70 | 2 tbsp | 20 g |
+| [[PBfit chocolate]] | 260 | 1/2 cup | 59 g |
+| [[2% Cottage Cheese]] | 70 | 1/3 cup | 80 g |
+
+## Deluxe Pints
+#### Nutrition Facts
+| Calories (kcal) | 765 |
+| :-- | :--: |
+| Total Fat (g) | 16 |
+| Saturated Fat (g) | 1.5 |
+| Trans Fat (g) | 0 |
+| Cholesterol (mg) | 10 |
+| Sodium (mg) | 1788 |
+| Total Carbohydrate (g) | 109 |
+| Dietary Fiber (g) | 11 |
+| Sugars (g) | 77.5 |
+| Protein (g) | 43.5 |
+#### Ingredients
+| Ingredient | Calories | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: | :--: |
+| [[Vanilla Almond Milk]] | 165 | 2 cup | 490 g | |
+| [[Butterscotch Instant Pudding Mix]] | 106 | 3 tbsp | 31 g | 1/2 package |
+| [[PBfit chocolate]] | 390 | 2/3 cup | 89 g | |
+| [[2% Cottage Cheese]] | 104 | 1/2 cup | 120 g | |

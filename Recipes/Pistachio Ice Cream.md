@@ -55,3 +55,51 @@ I ended up not putting in the vanilla creamer. Was an improvement but it's still
 This did the trick in terms of flavor / texture! But I'd like to lower the calories some if possible.
 
 Too much xantham gum? Better with cottage cheese. Blended not so good
+
+## Regular Pints
+#### Nutrition Facts
+| Calories (kcal) | 675 |
+| :-- | :--: |
+| Total Fat (g) | 27 |
+| Saturated Fat (g) | 2 |
+| Trans Fat (g) | 0 |
+| Cholesterol (mg) | 6 |
+| Sodium (mg) | 1105 |
+| Total Carbohydrate (g) | 92 |
+| Dietary Fiber (g) | 5 |
+| Sugars (g) | 70.5 |
+| Protein (g) | 23.5 |
+#### Ingredients
+| Ingredient | Calories | Volume | Weight |
+| :-- | :--: | :--: | :--: |
+| [[Vanilla Almond Milk]] | 145 | 2 cup | 440 g |
+| [[2% Cottage Cheese]] | 61 | 1/3 cup | 70 g |
+| [[Pistachio Instant Pudding Mix]] | 138 | 1/4 cup | 37 g |
+| [[Almond Extract]] | 5 | 1/4 tsp | 1.5 g |
+| [[Splenda]] | 55 | 1 tbsp | 14.5 g |
+| [[PB2 Powdered Almond Butter]] | 61 | 2 1/2 tbsp | 16 g |
+| [[Chopped almonds]] | 209 | 1/3 cup | 37 g |
+
+## Deluxe Pints
+#### Nutrition Facts
+| Calories (kcal) | 1013 |
+| :-- | :--: |
+| Total Fat (g) | 40.5 |
+| Saturated Fat (g) | 3 |
+| Trans Fat (g) | 0 |
+| Cholesterol (mg) | 9 |
+| Sodium (mg) | 1658 |
+| Total Carbohydrate (g) | 138 |
+| Dietary Fiber (g) | 7.5 |
+| Sugars (g) | 106 |
+| Protein (g) | 35 |
+#### Ingredients
+| Ingredient | Calories | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: | :--: |
+| [[Vanilla Almond Milk]] | 218 | 3 cup | 650 g | |
+| [[2% Cottage Cheese]] | 92 | 1/2 cup | 110 g | |
+| [[Pistachio Instant Pudding Mix]] | 207 | 1/3 cup | 55 g | 1/2 package |
+| [[Almond Extract]] | 7 | 1/2 tsp | 2.5 g | |
+| [[Splenda]] | 83 | 2 tbsp | 22 g | |
+| [[PB2 Powdered Almond Butter]] | 92 | 1/4 cup | 24 g | |
+| [[Chopped almonds]] | 314 | 1/2 cup | 55 g | |

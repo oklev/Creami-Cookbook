@@ -62,8 +62,6 @@ def to_imperial(ml):
         ml = mod
     conversion = {
         236:"1 cup",
-        177:"3/4 cup",
-        158:"2/3 cup",
         118:"1/2 cup",
         79:"1/3 cup",
         59:"1/4 cup"
@@ -71,8 +69,10 @@ def to_imperial(ml):
     if whole == 0:
         conversion.update(
             {
+                177:"3/4 cup",
+                158:"2/3 cup",
                 44:"3 tbsp",
-                37:"2 1\2 tbsp",
+                37:"2 1/2 tbsp",
                 30:"2 tbsp",
                 22:"1 1/2 tbsp",
                 15:"1 tbsp",
@@ -216,9 +216,10 @@ class Ingredient:
             raise ValueError(f"Unit '{unit}' not found for ingredient '{self.name}'. Available units: {', '.join(self.serving_sizes.keys())}")
         return quantity / self.serving_sizes[unit]
     
-    def line(self, header, factor, description=None):
+    def line(self, header, factor=1, description=None,factor_2=1):
         if description is None: description = f"[[{self.name}]]"
         line = "|"
+        factor=factor*factor_2
         for column in header:
             match column:
                 case "Ingredient": line += f" {description} |"
@@ -264,20 +265,12 @@ class Recipe:
                     else:
                         value = line.split(":",1)[1].strip()
                         self.properties[key] = property_types[key](value)
-            if "## Base Recipe" in content:
-                self.content = content.rsplit("## Base Recipe",1)[1].strip()
-                if "\n## " in self.content:
-                    self.content = self.content.split("\n## ")[0].strip()
-            else:
-                self.content = content.split("---\n",2)[2].strip()
-        if "Volume" in properties:
-            self.volume = to_number(properties.split("Volume:")[1].split("\n")[0].strip())
-        else:
-            self.volume = None
+            self.instructions = content.split("#### Instructions")[1].split("\n##")[0].strip()
+            self.comments = content.split("#### Comments")[1].split("\n##")[0].strip()
         
         # Get list of ingredients
         self.ingredients = {}
-        ingredients_text = self.content.split("#### Ingredients")[1].split("####")[0].strip()
+        ingredients_text = content.split("#### Ingredients")[1].split("####")[0].strip()
         def get_unit(entry):
             if "unit" in entry: return entry["unit"].strip().lower()
             if "other" in entry and len(entry["other"].strip().split()) == 2:
@@ -323,16 +316,8 @@ class Recipe:
                     elif macro is not None: nutrition_facts[key] += macro
                 for key in dietary_restrictions:
                     self.properties[key]._and(Boolean(ingredient.dietary_restrictions.get(key, False)))
+        self.nutrition_facts = nutrition_facts
         
-        self.nutrition_facts ={}
-        for key in nutrition_facts:
-            if nutrition_facts[key] is not None:
-                if "(g)" in key:
-                    # Round to nearest 0.5g
-                    self.nutrition_facts[key] = to_number(round(nutrition_facts[key]*2)/2)
-                else:
-                    # Round to nearest mg or kcal
-                    self.nutrition_facts[key] = int(round(nutrition_facts[key]))
         self.properties["High Protein"] = Boolean()
         try:
             if self.nutrition_facts["Calories (kcal)"] < 10*self.nutrition_facts["Protein (g)"]: self.properties["High Protein"]._set(True)
@@ -343,37 +328,74 @@ class Recipe:
         elif self.nutrition_facts["Calories (kcal)"] >= 600: 
             self.properties["Calorie range"] = "600+"
         else:
-            self.properties["Calorie range"] = f"{(self.nutrition_facts['Calories (kcal)']//100)*100}-{(self.nutrition_facts['Calories (kcal)']//100)*100+99}"
+            self.properties["Calorie range"] = f"{int((self.nutrition_facts['Calories (kcal)']//100)*100)}-{int((self.nutrition_facts['Calories (kcal)']//100)*100+99)}"
         
     def write(self):
-        content = "---\n" + "\n".join(f"{key}: {self.properties[key]}" for key in self.properties) + f"\n---\n## Base Recipe\n{self.content}"
+        content = "---\n" + "\n".join(f"{key}: {self.properties[key]}" for key in self.properties)
+        content += f"""
+---
+## Base Recipe
+#### Nutrition Facts
+{self.get_nutrition()}
+#### Ingredients
+{self.ingredient_table()}
+#### Instructions
+
+{self.instructions}
+
+#### Comments
+
+{self.comments}"""
         
-        # Update nutrition facts
-        nutrition_facts = [f"| {key} | {self.nutrition_facts[key]} |" for key in self.nutrition_facts]
-        nutrition_facts.insert(1, "| :-- | :--: |")
-        content = content.replace(
-            "#### Nutrition Facts" + self.content.split("#### Nutrition Facts")[1].split("####")[0],
-            f"#### Nutrition Facts\n" + "\n".join(nutrition_facts) + "\n"
-        )
-        # Respace ingredients
-        content = content.replace(
-            "#### Ingredients" + self.content.split("#### Ingredients")[1].split("####")[0],
-            f"#### Ingredients\n{self.ingredient_table()}\n"
-        )
+        # Add scaled recipes to fill different volume containers
+        if self.properties["Volume (ml)"]:
+            volume = int(self.properties["Volume (ml)"].replace('"',""))
+            regular_factor = 473/volume
+            deluxe_factor = 710/volume
+            content += f"""
+
+## Regular Pints
+#### Nutrition Facts
+{self.get_nutrition(regular_factor)}
+#### Ingredients
+{self.ingredient_table(regular_factor)}
+"""
+            content += f"""
+## Deluxe Pints
+#### Nutrition Facts
+{self.get_nutrition(deluxe_factor)}
+#### Ingredients
+{self.ingredient_table(deluxe_factor)}
+"""
+        
         with open(self.file,"w") as fo:
             fo.write(content)
     
-    def ingredient_table(self,header=None):
+    def get_nutrition(self,factor=1):
+        nutrition_facts = {key:self.nutrition_facts[key] for key in self.nutrition_facts if self.nutrition_facts[key] is not None}
+        for key in nutrition_facts:
+            if "(g)" in key:
+                # Round to nearest 0.5g
+                nutrition_facts[key] = to_number(round(nutrition_facts[key]*factor*2)/2)
+            else:
+                # Round to nearest mg or kcal
+                nutrition_facts[key] = int(round(nutrition_facts[key]*factor))
+        # Update nutrition facts
+        nutrition_facts = [f"| {key} | {nutrition_facts[key]} |" for key in nutrition_facts]
+        nutrition_facts.insert(1, "| :-- | :--: |")
+        return "\n".join(nutrition_facts)
+    
+    def ingredient_table(self,factor=1,header=None):
         if header is None:
             header = ["Ingredient","Calories","Volume","Weight","Other"]
-        if "Other" in header and not any(ingredients[i].gives_other(self.ingredients[i][0]) for i in self.ingredients):
+        if "Other" in header and not any(ingredients[i].gives_other(self.ingredients[i][0]*factor) for i in self.ingredients):
             header.remove("Other")
         table = f"| {' | '.join(header)} |"
         spaces = [":--:" for _ in header]
         spaces[header.index("Ingredient")] = ":--"
         table += f"\n| {' | '.join(spaces)} |"
         for i in self.ingredients:
-            table += "\n" + ingredients[i].line(header,*self.ingredients[i])
+            table += "\n" + ingredients[i].line(header,*self.ingredients[i],factor_2=factor)
         return table
 
 if __name__ == "__main__":
@@ -400,5 +422,6 @@ if __name__ == "__main__":
                 property_types[prop] = str
     
     for recipe in glob(os.path.join(repo_dir, "Recipes", "*.md")):
-        recipe_name = os.path.basename(recipe).split(".md")[0]    
+        recipe_name = os.path.basename(recipe).split(".md")[0]
+        Recipe(recipe_name).write()
         Recipe(recipe_name).write()

@@ -42,3 +42,55 @@ Vegan: true
 #### Comments
 
 Needs more filling, cinnamon
+
+## Regular Pints
+#### Nutrition Facts
+| Calories (kcal) | 496 |
+| :-- | :--: |
+| Total Fat (g) | 7.5 |
+| Saturated Fat (g) | 1.5 |
+| Trans Fat (g) | 0 |
+| Cholesterol (mg) | 77 |
+| Sodium (mg) | 1477 |
+| Total Carbohydrate (g) | 70 |
+| Dietary Fiber (g) | 0.5 |
+| Sugars (g) | 42.5 |
+| Protein (g) | 38.5 |
+#### Ingredients
+| Ingredient | Calories | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: | :--: |
+| [[Vanilla Almond Milk]] | 137 | 1 1/2 cup | 410 g | |
+| [[Vanilla Ice Cream Protein Powder]] | 167 | | 43 g | 1 1/2 |
+| [[Apple Pie Filling]] | 70 | 1/4 cup | 59 g | |
+| [[PB2 Powdered Almond Butter]] | 35 | 1 1/2 tbsp | 9 g | |
+| [[Butter Extract]] | 5 | 1/4 tsp | 1.5 g | |
+| [[Butterscotch Instant Pudding Mix]] | 16 | 1/2 tbsp | 5 g |  |
+| [[Sugar Free Vanilla Instant Pudding Mix]] | 63 | 2 tbsp | 22 g | 1/2 package |
+| [[Xantham Gum]] | 3 | 1/4 tsp | 1 g | |
+| Cinnamon | 0 | 1/4 tsp | 1 g | |
+
+## Deluxe Pints
+#### Nutrition Facts
+| Calories (kcal) | 745 |
+| :-- | :--: |
+| Total Fat (g) | 11 |
+| Saturated Fat (g) | 2 |
+| Trans Fat (g) | 0 |
+| Cholesterol (mg) | 115 |
+| Sodium (mg) | 2217 |
+| Total Carbohydrate (g) | 105 |
+| Dietary Fiber (g) | 1 |
+| Sugars (g) | 64 |
+| Protein (g) | 58 |
+#### Ingredients
+| Ingredient | Calories | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: | :--: |
+| [[Vanilla Almond Milk]] | 206 | 2 1/2 cup | 620 g | |
+| [[Vanilla Ice Cream Protein Powder]] | 251 | | 65 g | 2 scoop |
+| [[Apple Pie Filling]] | 106 | 1/3 cup | 89 g | |
+| [[PB2 Powdered Almond Butter]] | 52 | 2 tbsp | 14 g | |
+| [[Butter Extract]] | 8 | 1/2 tsp | 2.5 g | |
+| [[Butterscotch Instant Pudding Mix]] | 23 | 2 tsp | 7 g |  |
+| [[Sugar Free Vanilla Instant Pudding Mix]] | 94 | 3 tbsp | 33 g | 1 package |
+| [[Xantham Gum]] | 5 | 1/2 tsp | 1.5 g | |
+| Cinnamon | 0 | 1/2 tsp | 1.5 g | |

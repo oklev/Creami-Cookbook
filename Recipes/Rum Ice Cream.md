@@ -39,3 +39,49 @@ Vegan: false
 #### Comments
 
 It's good! It's really good!
+
+## Regular Pints
+#### Nutrition Facts
+| Calories (kcal) | 476 |
+| :-- | :--: |
+| Total Fat (g) | 8 |
+| Saturated Fat (g) | 0 |
+| Trans Fat (g) | 0 |
+| Cholesterol (mg) | 0 |
+| Sodium (mg) | 1445 |
+| Total Carbohydrate (g) | 66 |
+| Dietary Fiber (g) | 2.5 |
+| Sugars (g) | 41.5 |
+| Protein (g) | 13.5 |
+#### Ingredients
+| Ingredient | Calories | Volume | Weight |
+| :-- | :--: | :--: | :--: |
+| [[Vanilla Almond Milk]] | 150 | 2 cup | 450 g |
+| [[Butterscotch Instant Pudding Mix]] | 51 | 1 1/2 tbsp | 15 g |
+| [[Sugar Free Vanilla Instant Pudding Mix]] | 46 | 1 1/2 tbsp | 16 g |
+| [[PB2 Powdered Almond Butter]] | 114 | 1/4 cup | 30 g |
+| [[Rum Extract]] | 6 | 1/2 tsp | 2 g |
+| [[Dark Rum]] | 109 | 3 tbsp | 45 g |
+
+## Deluxe Pints
+#### Nutrition Facts
+| Calories (kcal) | 714 |
+| :-- | :--: |
+| Total Fat (g) | 12 |
+| Saturated Fat (g) | 0 |
+| Trans Fat (g) | 0 |
+| Cholesterol (mg) | 0 |
+| Sodium (mg) | 2168 |
+| Total Carbohydrate (g) | 99 |
+| Dietary Fiber (g) | 3.5 |
+| Sugars (g) | 62 |
+| Protein (g) | 20 |
+#### Ingredients
+| Ingredient | Calories | Volume | Weight | Other |
+| :-- | :--: | :--: | :--: | :--: |
+| [[Vanilla Almond Milk]] | 225 | 3 cup | 680 g | |
+| [[Butterscotch Instant Pudding Mix]] | 77 | 2 1/2 tbsp | 22 g | 1/2 package |
+| [[Sugar Free Vanilla Instant Pudding Mix]] | 68 | 2 1/2 tbsp | 24 g | 1/2 package |
+| [[PB2 Powdered Almond Butter]] | 171 | 1/2 cup | 45 g | |
+| [[Rum Extract]] | 8 | 1/2 tsp | 3 g | |
+| [[Dark Rum]] | 164 | 1/4 cup | 68 g | |
