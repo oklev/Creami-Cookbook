@@ -31,7 +31,7 @@ Vegan: false
 | [[Pasteurized Egg Whites]]                 |          |   2 tbsp   |        |       |
 | [[Butter Extract]]                         |          |  1/8 tsp   |        |       |
 | [[Salt]]                                   |          |  1/8 tsp   |        |       |
-| [[2% Cottage Cheese]]                      |          |  1/2 cup   |        |       |
+| [[2% Cottage Cheese]]                      |          |  1/4 cup   |        |       |
 #### Instructions
 
 1. Mix
