@@ -4,7 +4,7 @@ Calorie range: 200-299
 Volume (ml): "340"
 High Protein: false
 Gluten Free: true
-Dairy Free: true
+Dairy Free: false
 Vegan: false
 ---
 ## Base Recipe
@@ -23,7 +23,7 @@ Vegan: false
 #### Ingredients
 | Ingredient                                 | Calories |   Volume   | Weight | Other |
 | :----------------------------------------- | :------: | :--------: | :----: | :---: |
-| [[Vanilla Almond Milk]]                    |    99    | 1 1/4 cup  | 300 g  |       |
+| [[Vanilla Almond Milk]]                    |    99    |   1 cup    | 300 g  |       |
 | [[Vanilla Bean Paste]]                     |    15    |   1 tsp    |  5 g   |       |
 | [[Xantham Gum]]                            |    2     |  1/4 tsp   |  1 g   |       |
 | [[PB2 Cashew Powder]]                      |    10    |   1 tsp    |  2 g   |       |
@@ -31,6 +31,7 @@ Vegan: false
 | [[Pasteurized Egg Whites]]                 |          |   2 tbsp   |        |       |
 | [[Butter Extract]]                         |          |  1/8 tsp   |        |       |
 | [[Salt]]                                   |          |  1/8 tsp   |        |       |
+| [[2% Cottage Cheese]]                      |          |  1/2 cup   |        |       |
 #### Instructions
 
 1. Mix
