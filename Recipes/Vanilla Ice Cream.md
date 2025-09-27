@@ -57,14 +57,13 @@ Solved! The protein powder was definitely part of the problem, and without it th
 | Sugars (g) | 27.5 |
 | Protein (g) | 19.5 |
 #### Ingredients
-| Ingredient | Calories | Volume | Weight | Other |
-| :-- | :--: | :--: | :--: | :--: |
-| [[Vanilla Ice Cream Protein Powder]] | 83 | | 22 g |  |
-| [[Vanilla Almond Milk]] | 137 | 1 1/2 cup | 410 g | |
-| [[Vanilla Bean Paste]] | 21 | 1/2 tbsp | 7 g | |
-| [[Xantham Gum]] | 3 | 1/4 tsp | 1 g | |
-| [[PB2 Cashew Powder]] | 14 | 1/2 tbsp | 3 g | |
-| [[Sugar Free Vanilla Instant Pudding Mix]] | 63 | 2 tbsp | 22 g | 1/2 package |
+| Ingredient                                 | Calories |  Volume   | Weight |    Other    |
+| :----------------------------------------- | :------: | :-------: | :----: | :---------: |
+| [[Vanilla Ice Cream Protein Powder]]       |    83    |           |  22 g  |             |
+| [[Vanilla Almond Milk]]                    |   137    | 1 1/2 cup | 410 g  |             |
+| [[Vanilla Bean Paste]]                     |    21    | 1/2 tbsp  |  7 g   |             |
+| [[PB2 Cashew Powder]]                      |    14    | 1/2 tbsp  |  3 g   |             |
+| [[Sugar Free Vanilla Instant Pudding Mix]] |    63    |  2 tbsp   |  22 g  | 1/2 package |
 
 ## Deluxe Pints
 #### Nutrition Facts
