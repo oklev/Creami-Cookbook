@@ -1,11 +1,11 @@
 ---
-Taste rating /5: 
+Taste rating /5:
 Calorie range: 200-299
 Volume (ml): "340"
 High Protein: false
 Gluten Free: true
 Dairy Free: true
-Vegan: true
+Vegan: false
 ---
 ## Base Recipe
 #### Nutrition Facts
@@ -21,24 +21,26 @@ Vegan: true
 | Sugars (g) | 20 |
 | Protein (g) | 14 |
 #### Ingredients
-| Ingredient | Calories | Volume | Weight | Other |
-| :-- | :--: | :--: | :--: | :--: |
-| [[Vanilla Ice Cream Protein Powder]] | 60 | | 16 g | 1/2 scoop |
-| [[Vanilla Almond Milk]] | 99 | 1 1/4 cup | 300 g | |
-| [[Vanilla Bean Paste]] | 15 | 1 tsp | 5 g | |
-| [[Xantham Gum]] | 2 | 1/4 tsp | 1 g | |
-| [[PB2 Cashew Powder]] | 10 | 1 tsp | 2 g | |
-| [[Sugar Free Vanilla Instant Pudding Mix]] | 45 | 1 1/2 tbsp | 16 g |  |
+| Ingredient                                 | Calories |   Volume   | Weight | Other |
+| :----------------------------------------- | :------: | :--------: | :----: | :---: |
+| [[Vanilla Almond Milk]]                    |    99    | 1 1/4 cup  | 300 g  |       |
+| [[Vanilla Bean Paste]]                     |    15    |   1 tsp    |  5 g   |       |
+| [[Xantham Gum]]                            |    2     |  1/4 tsp   |  1 g   |       |
+| [[PB2 Cashew Powder]]                      |    10    |   1 tsp    |  2 g   |       |
+| [[Sugar Free Vanilla Instant Pudding Mix]] |    45    | 1 1/2 tbsp |  16 g  |       |
+| [[Pasteurized Egg Whites]]                 |          |   2 tbsp   |        |       |
+| [[Butter Extract]]                         |          |  1/8 tsp   |        |       |
+| [[Salt]]                                   |          |  1/8 tsp   |        |       |
 #### Instructions
 
-1. 
+1. Mix
 2. Freeze overnight in creami pint
-3. Mix on "SETTING" setting
-4. Add LIQUID and respin once or twice until smooth
+3. Mix on "Gelato" setting
+4. Add milk or water and respin once or twice until smooth
 
 #### Comments
 
-Too much protein
+Solved! The protein powder was definitely part of the problem, and without it the recipe needed salt as well. Pasteurized Egg Whites do the trick! I also used oat milk as mix in and that was 🙌🏻
 
 ## Regular Pints
 #### Nutrition Facts
