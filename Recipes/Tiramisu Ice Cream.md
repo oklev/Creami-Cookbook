@@ -79,12 +79,12 @@ Vegan: true
 | Sugars (g) | 35 |
 | Protein (g) | 2.5 |
 #### Ingredients
-| Ingredient | Calories | Volume | Weight | Other |
-| :-- | :--: | :--: | :--: | :--: |
-| [[Vanilla Almond Milk]] | 215 | 2 1/2 cup | 650 g | |
-| [[Sugar Free Vanilla Instant Pudding Mix]] | 98 | 3 tbsp | 34.5 g | 1 package |
-| [[Cocoa Powder]] | 22 | 2 tbsp | 8.5 g | |
-| [[Espresso Powder]] | 33 | 2 tbsp | 13 g | |
-| [[Rum Extract]] | 8 | 1/2 tsp | 2.5 g | |
-| [[Butter Extract]] | 4 | 1/4 tsp | 1.5 g | |
-| [[Coconut Extract]] | 4 | 1/4 tsp | 1.5 g | |
+| Ingredient                                 | Calories |  Volume   | Weight |   Other   |
+| :----------------------------------------- | :------: | :-------: | :----: | :-------: |
+| [[Vanilla Almond Milk]]                    |   215    | 2 1/2 cup | 650 g  |           |
+| [[Sugar Free Vanilla Instant Pudding Mix]] |    98    |  3 tbsp   | 34.5 g | 1 package |
+| [[Cocoa Powder]]                           |    22    |  2 tbsp   | 8.5 g  |           |
+| [[Espresso Powder]]                        |    33    |  2 tbsp   |  13 g  |           |
+| [[Rum Extract]]                            |    8     |  1/2 tsp  | 2.5 g  |           |
+| [[Butter Extract]]                         |    4     |  1/4 tsp  | 1.5 g  |           |
+| [[Coconut Extract]]                        |    4     |  1/4 tsp  | 1.5 g  |           |
